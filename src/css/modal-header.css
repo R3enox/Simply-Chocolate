@@ -1,0 +1,118 @@
+.mobile-menu {
+        position: fixed;
+        width: 220px;
+        height: 100%;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .mobile-menu-container {
+        position: relative;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 136px;
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-menu-close-icon {
+        stroke: var(--primary-background-color);
+    }
+
+    .mobile-navigation-list {
+        display: flex;
+        flex-direction: column;
+        padding-right: 26px;
+        padding-left: 30px;
+        row-gap: 24px;
+    }
+
+    .mobile-navigation-link {
+        font-family: var(--main-font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14px;
+        letter-spacing: -0.02em;
+        color: var(--first-color);
+    }
+
+    .mobile-social-media-icon {
+        stroke: var(--first-color);
+        fill: transparent;
+    }
+
+    .mobile-social-media-container {
+        display: flex;
+        margin-right: auto;
+    }
+
+    .mobile-social-media-list {
+        display: flex;
+        column-gap: 18px;
+    }
+
+    .mobile-social-media-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        current {
+            color: var(--accent-color);
+        }
+
+        .mobile-menu {
+            width: 290px;
+        }
+
+        .header-container {
+            padding: 0 32px;
+        }
+
+        .mobile-menu-container {
+            padding-top: 156px;
+            padding-bottom: 24px;
+        }
+    
+        .mobile-menu-close-btn {
+            top: 24px;
+            right: 32px;
+        }
+
+        .mobile-navigation-list {
+            padding-right: 53px;
+            padding-left: 49px;
+        }
+
+        .mobile-social-media-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    
