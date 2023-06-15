@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "project-of-future-seniors",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/project-of-future-seniors/",
     "preview": "vite preview"
   },
   "devDependencies": {
