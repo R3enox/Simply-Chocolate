@@ -1,17 +1,44 @@
-/**
+/**@import
   |============================
   | include css partials with
-  | default @import url()
+  | default @@import url()
   |============================
 */
 @import url('./reset.css');
+@import url('./sections.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./unique-components.css');
+@import url('./how-its-made.css');
+@import url('./our-products.css');
+@import url('./top-sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+@import url('./modal-header.css');
+@import url('./modal-reviews.css');
+@import url('./modal-subscribe.css');
+
 
 :root {
-
+    --main-font-family: "Montserrat", sans-serif;
+    --primary-background-color: #FAFAFA;
+    --background-color-hero: #FCF1E0;
+    --border-color-hero: rgba(255, 255, 255, 0.5);
+    --box-shadow-color: rgba(215, 228, 249, 0.25);
+    --accent-color: #FD9222;
+    --primary-color: #1E1823;
+    --primary-text-color: #111111;
+    --first-color: #FFF;
+    --input-text-color: rgba(64, 64, 64, 0.3);
+    --first-text-color: rgba(255, 255, 255, 0.7);
+    --secondary-text-color: rgba(17, 17, 17, 0.7);
+    --helper-color: rgba(17, 17, 17, 0.1);
+    --border-color: rgba(17, 17, 17, 0.05);
 }
 
-
 body {
-  
+  font-family: var(--main-font-family);
+  background-color: var(--background-color);
 }
