@@ -1,0 +1,499 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* ------------CONTAINER------------ */
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/* --------------FONTS------------ */
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+}
+
+/* ----------HERO-MOBILE-375PX------------ */
+
+.section-hero {
+  margin-top: 14px;
+  background-color: --primary-background-color;
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+.container-bg-hero {
+  padding-top: 395px;
+  padding-bottom: 19px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero/chocolate-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+
+@media (min-device-ratio: 2) and (max-width: 727px),
+  (min-resolution: 192dpi) and (max-width: 727px),
+  (min-resolution: 2dppx) and (max-width: 727px) {
+  .container-bg-hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero/chocolate-mobile@2x.jpg);
+  }
+}
+
+.title-hero {
+  text-align: start;
+  max-width: 280px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--first-color);
+}
+.btn-list-hero {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.btn-hero {
+  display: block;
+  border-radius: 100px;
+  padding: 12px 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--first-color);
+}
+.btn-hero-first {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.btn-hero-first:hover,
+.btn-hero-first:focus {
+  background-color: var(--background-color-hero);
+  color: var(--accent-color);
+}
+
+.btn-hero-second {
+  background-color: inherit;
+  border: 1px solid #ffffff;
+}
+
+.link-scroll {
+  text-decoration: none;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--first-color);
+
+  letter-spacing: -0.03em;
+}
+
+.link-scroll:hover,
+.link-scroll:focus {
+  color: var(--accent-color);
+}
+
+.scroll-decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+
+  color: var(--accent-color);
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.link-scroll:hover .scroll-decor,
+.link-scroll:focus .scroll-decor {
+  background-color: var(--accent-color);
+}
+
+.svg-check {
+  fill: currentColor;
+}
+
+/*-- MODAL-- */
+
+.backdrop {
+  overflow: scroll;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 244, 244, 0.5);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  background-color: var(--primary-background-color);
+  border-radius: 15px;
+  height: 95%;
+  padding-top: 32px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 374px) {
+  .modal {
+    max-width: 95vw;
+
+    /* width: 95%;
+    min-width: 311px;
+    height: 95%;
+    max-height: 584px; */
+  }
+}
+
+.close-icon {
+  stroke: var(--primary-text-color);
+  position: absolute;
+  right: 14px;
+  top: 14px;
+
+  background-color: inherit;
+  border: none;
+}
+
+.title-modal {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.color-title {
+  color: var(--accent-color);
+}
+
+.modal-item {
+  width: 100%;
+  /* display: flex;
+
+  align-items: center;
+  justify-content: space-between; */
+
+  background: var(--first-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+
+  padding: 8px 16px;
+}
+
+.modal-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.img-card {
+  width: 84px;
+  height: 69px;
+}
+
+.price-link {
+  background-color: var(--primary-background-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: #111111;
+}
+
+.form-list {
+  margin-top: 32px;
+}
+
+.input-form {
+  padding-left: 18px;
+  border: none;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+  min-width: 100%;
+  height: 45px;
+}
+
+.input-form:focus,
+.textarea-input:focus {
+  outline: none;
+}
+
+.form-text {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.form-text::placeholder {
+  font-size: 14px;
+  line-height: 1.21px;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.input-form {
+  margin-top: 8px;
+}
+
+.imput-wrap {
+  position: relative;
+}
+
+.wraper-phone {
+  position: absolute;
+  left: 18px;
+  top: 60%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-wrapper {
+  margin-bottom: 18px;
+}
+
+.textarea-input {
+  padding-top: 14px;
+  padding-left: 18px;
+  margin-top: 8px;
+  border: none;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+  min-width: 100%;
+
+  height: 91px;
+  resize: none;
+}
+
+.imput-phone {
+  position: relative;
+  padding-left: 106px;
+}
+
+.text-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.text-number::after {
+  position: absolute;
+  bottom: -1px;
+  right: -12px;
+
+  display: block;
+  content: '';
+  width: 1px;
+  height: 25px;
+  background-color: rgba(17, 17, 17, 0.1);
+}
+
+.wraper-card {
+  position: relative;
+}
+
+.icons-input-mc {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-25%);
+}
+
+.btn-submit {
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.24;
+  width: 109px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--first-color);
+  background-color: var(--accent-color);
+
+  border-radius: 100px;
+}
+
+.modal-item {
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+}
+
+/* ------------TABLET----------------- */
+
+@media screen and (min-width: 768px) {
+  .container-bg-hero {
+    background-image: url(../img/hero/chocolate-tb.jpg);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container-hero {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .container-bg-hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  /* ---------------Modal-tablet------------ */
+
+  .modal {
+    width: 609px;
+    padding-right: 48px;
+    padding-left: 48px;
+    overflow: auto;
+  }
+
+  .stuff-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .card-link {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .modal-item {
+    flex-basis: calc((100% - 16px) / 3);
+  }
+
+  .modal-item:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .img-card {
+    width: 120px;
+    height: 107px;
+  }
+
+  .wraper-tablet-input {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-form-tablet {
+    min-width: 246px;
+    height: 66px;
+  }
+
+  .input-form {
+    position: relative;
+    height: 66px;
+  }
+
+  .textarea-input {
+    height: 137px;
+  }
+
+  .btn-submit {
+    width: 133px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-bg-hero {
+    background-image: url(../img/hero/chocolate-tb.jpg);
+  }
+}
+
+@media (min-device-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .container-bg-hero {
+    background-image: url(../img/hero/chocolate-tb@2x.jpg);
+  }
+}

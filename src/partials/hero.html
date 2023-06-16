@@ -1,0 +1,258 @@
+<section class="section-hero">
+  <h1 hidden>Chocolate delight</h1>
+  <div class="container container-hero">
+    <div class="container-bg-hero">
+      <div class="wrap">
+        <h2 class="title-hero">
+          Treat yourself or a loved one to our finest ingredients for a moment
+          of pure delight!
+        </h2>
+        <ul class="btn-list-hero">
+          <li>
+            <button
+              type="button"
+              class="btn-hero btn-hero-first"
+              data-modal-open
+            >
+              Buy now
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn-hero btn-hero-second">
+              How it’s made
+            </button>
+          </li>
+        </ul>
+      </div>
+      <a href="#footer" class="link-scroll">
+        scroll down
+        <span class="scroll-decor">
+          <svg class="svg-check" width="20" height="20">
+            <use href="../img/icons.svg#icon-check"></use>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <h2 class="title-modal"><span class="color-title">Buy</span> now</h2>
+
+    <button type="button" class="btn-close close-icon" data-modal-close>
+      <svg width="24px" height="24px">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="stuff-list">
+      <li class="modal-item">
+        <a href="" class="card-link">
+          <picture class="img-picture">
+            <source
+              srcset="
+                ../img/hero/order/order-1.png     1x,
+                ../img/hero/order/order-1@2x.png  2x,
+                ../img/hero/order/order-1.webp    1x,
+                ../img/hero/order/order-1@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ../img/hero/order/order-1.png     1x,
+                ../img/hero/order/order-1@2x.png  2x,
+                ../img/hero/order/order-1.webp    1x,
+                ../img/hero/order/order-1@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/hero/order/order-1.png     1x,
+                ../img/hero/order/order-1@2x.png  2x,
+                ../img/hero/order/order-1.webp    1x,
+                ../img/hero/order/order-1@2x.webp 2x
+              "
+              media="(max-width: 768px)"
+            />
+            <img
+              class="img-card"
+              src="../img/hero/order/order-2.png"
+              alt="Black Chocolate"
+            />
+          </picture>
+
+          <p href="" class="price-link">100 g</p>
+        </a>
+      </li>
+      <li class="modal-item">
+        <a href="" class="card-link">
+          <picture>
+            <source
+              srcset="
+                ../img/hero/order/order-2.png     1x,
+                ../img/hero/order/order-2@2x.png  2x,
+                ../img/hero/order/order-2.webp    1x,
+                ../img/hero/order/order-2@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ../img/hero/order/order-2.png     1x,
+                ../img/hero/order/order-2@2x.png  2x,
+                ../img/hero/order/order-2.webp    1x,
+                ../img/hero/order/order-2@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/hero/order/order-2.png     1x,
+                ../img/hero/order/order-2@2x.png  2x,
+                ../img/hero/order/order-2.webp    1x,
+                ../img/hero/order/order-2@2x.webp 2x
+              "
+              media="(max-width: 768px)"
+            />
+            <img
+              class="img-card"
+              src="../img/hero/order/order-2.png"
+              alt="Black Chocolate"
+            />
+          </picture>
+          <p href="" class="price-link">200 g</p>
+        </a>
+      </li>
+      <li class="modal-item">
+        <a href="" class="card-link">
+          <picture>
+            <source
+              srcset="
+                ../img/hero/order/order-3.png     1x,
+                ../img/hero/order/order-3@2x.png  2x,
+                ../img/hero/order/order-3.webp    1x,
+                ../img/hero/order/order-3@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ../img/hero/order/order-3.png     1x,
+                ../img/hero/order/order-3@2x.png  2x,
+                ../img/hero/order/order-3.webp    1x,
+                ../img/hero/order/order-3@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/hero/order/order-3.png     1x,
+                ../img/hero/order/order-3@2x.png  2x,
+                ../img/hero/order/order-3.webp    1x,
+                ../img/hero/order/order-3@2x.webp 2x
+              "
+              media="(max-width: 768px)"
+            />
+            <img
+              class="img-card"
+              src="../img/hero/order/order-3.png"
+              alt="Black Chocolate"
+              class="portfolio-list-img"
+            />
+          </picture>
+          <p href="" class="price-link">300 g</p>
+        </a>
+      </li>
+    </ul>
+
+    <form class="form-list">
+      <label class="form-text form-wrapper" for="name"
+        >Personal information
+        <div class="wraper-tablet-input">
+          <input
+            type="text"
+            name="name"
+            class="input-form input-form-tablet"
+            required
+            placeholder="Name"
+            id="name"
+          />
+          <input
+            type="text"
+            name="surname"
+            class="input-form input-form-tablet"
+            required
+            placeholder="Surname"
+            id="surname"
+          />
+        </div>
+      </label>
+
+      <label for="email" class="form-text form-wrapper"
+        >Email
+        <input
+          type="email"
+          name="email"
+          class="input-form"
+          required
+          placeholder="Enter your email"
+          id="email"
+        />
+      </label>
+
+      <label for="tel" class="form-text form-wrapper"
+        >Phone number
+        <div class="imput-wrap">
+          <input
+            type="number"
+            name="tel"
+            class="input-form imput-phone"
+            required
+            placeholder="Phone number"
+            id="tel"
+          />
+          <div class="wraper-phone">
+            <svg width="24" height="24" class="icons-input">
+              <use href="../img/hero/icons.svg#icon-ukraine"></use>
+            </svg>
+            <p class="text-number">+380</p>
+          </div>
+        </div>
+      </label>
+
+      <label for="card" class="form-text form-wrapper"
+        >Card number
+        <div class="wraper-card">
+          <input
+            type="number"
+            name="card"
+            class="input-form"
+            required
+            placeholder="Enter card"
+            id="tel"
+          />
+
+          <svg width="32" height="21" class="icons-input-mc">
+            <use href="../img/hero/icons.svg#icon-mastercard"></use>
+          </svg>
+        </div>
+      </label>
+
+      <label for="comment" class="form-text form-wrapper"
+        >Comment
+        <textarea
+          name="comment"
+          id="comment"
+          class="textarea-input"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="../js/modal-hero.js"></script>
