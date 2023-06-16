@@ -102,7 +102,6 @@
   color: var(--first-color);
 }
 .subscribe-paragraph {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -133,7 +132,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .subscribe-container {
+  .container {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -163,8 +162,14 @@
   .subscribe-section {
     max-width: 768px;
   }
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
   .subscribe-container {
-    padding: 72px 32px;
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
   .subscribe-title {
     max-width: 378px;
@@ -172,7 +177,7 @@
     line-height: 1.17;
   }
   .subscribe-paragraph {
-    width: 468px;
+    max-width: 468px;
   }
 
   .subscribe-btn {
