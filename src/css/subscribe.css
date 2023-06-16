@@ -139,7 +139,7 @@
   .subscribe-section {
     max-width: 375px;
   }
-  .subscribe-container {
+  .subscribe-section {
     padding-top: 62px;
     padding-bottom: 63px;
   }
@@ -167,7 +167,7 @@
     padding-left: 32px;
   }
 
-  .subscribe-container {
+  .subscribe-section {
     padding-top: 72px;
     padding-bottom: 72px;
   }
