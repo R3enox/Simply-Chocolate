@@ -6,23 +6,16 @@
     top: 0;
     right: 0;
     background-color: var(--primary-color);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.7;
+    transform: translateX(100%);
+    transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
     opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    animation: slideInRight;
-    animation-duration: 0.7s;
+    transform: translateX(0);
+    animation-duration: 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* animation: slideOutRight; 
-        animation-duration: 2s;  */
 
 .mobile-menu-container {
     position: relative;
@@ -50,6 +43,12 @@
     stroke: var(--primary-background-color);
 }
 
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-close-btn:focus .mobile-menu-close-icon{
+    stroke: var(--accent-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mobile-navigation-list {
     display: flex;
     flex-direction: column;
@@ -73,18 +72,17 @@
     color: var(--accent-color);
 }
 
-.mobile-social-media-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .mobile-social-media-icon {
     stroke: var(--first-color);
     fill: transparent;
 }
 
-.mobile-social-media-icon:hover,
-.mobile-social-media-icon:focus {
+.mobile-social-media-link:hover .mobile-social-media-icon,
+.mobile-social-media-link:focus .mobile-social-media-icon {
     stroke: var(--accent-color);
+    animation: heartBeat;
+    animation-duration: 1.5s;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-social-media-container {
@@ -100,6 +98,37 @@
 .mobile-social-media-link {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 767px){
+
+    .mobile-menu-close-btn:hover .mobile-menu-close-icon,
+    .mobile-menu-close-btn:focus .mobile-menu-close-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-navigation-link {
+        position: relative;
+    }
+
+    .mobile-current-link::after {
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        content: '';
+        width: 24px;
+        height: 1px;
+        border-radius: 1px;
+        background-color: var(--accent-color);
+        transition: background-color var(--transition-dur-and-func);
+        display: none;
+    }
+
+    .mobile-current-link:hover:after,
+    .mobile-current-link:focus:after{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -130,8 +159,5 @@
         width: 24px;
         height: 24px;
     }
-
-    .current-link {
-        color: var(--accent-color);
-    }
 }
+

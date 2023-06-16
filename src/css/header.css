@@ -175,23 +175,13 @@ current {
     .header-social-media-link {
         display: flex;
         justify-content: center;
+    }
+
+    .header-social-media-link:hover .header-social-media-icon,
+    .header-social-media-link:focus .header-social-media-icon{
+        stroke: var(--accent-color);
+        animation: heartBeat;
+        animation-duration: 1.5s;
         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .header-social-media-link:focus {
-        animation: heartBeat;
-        animation-duration: 1.5s;
-        stroke: var(--accent-color);
      }
-
-     .header-social-media-link.header-social-media-icon:focus {
-        stroke: var(--accent-color);
-     }
-
-    .header-social-media-icon:hover,
-    .header-social-media-icon:focus {
-        animation: heartBeat;
-        animation-duration: 1.5s;
-        stroke: var(--accent-color);
-    }
 }
