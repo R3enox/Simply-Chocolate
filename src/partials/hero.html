@@ -179,6 +179,7 @@
             required
             placeholder="Name"
             id="name"
+            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
           />
           <input
             type="text"
@@ -187,11 +188,12 @@
             required
             placeholder="Surname"
             id="surname"
+            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
           />
         </div>
       </label>
 
-      <label for="email" class="form-text form-wrapper"
+      <label class="form-text form-wrapper"
         >Email
         <input
           type="email"
@@ -199,7 +201,7 @@
           class="input-form"
           required
           placeholder="Enter your email"
-          id="email"
+          pattern="[a-zA-Z@.]+"
         />
       </label>
 
@@ -207,12 +209,13 @@
         >Phone number
         <div class="imput-wrap">
           <input
-            type="number"
+            type="tel"
             name="tel"
             class="input-form imput-phone"
             required
             placeholder="Phone number"
             id="tel"
+            pattern="[0-9]+"
           />
           <div class="wraper-phone">
             <svg width="24" height="24" class="icons-input">
@@ -227,12 +230,13 @@
         >Card number
         <div class="wraper-card">
           <input
-            type="number"
+            type="tel"
             name="card"
             class="input-form"
             required
             placeholder="Enter card"
             id="tel"
+            pattern="[0-9]+"
           />
 
           <svg width="32" height="21" class="icons-input-mc">
