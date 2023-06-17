@@ -126,6 +126,14 @@ h4 {
 .btn-hero-second {
   background-color: inherit;
   border: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.btn-hero-second:hover,
+.btn-hero-second:focus {
+  color: var(--accent-color);
+  background-color: var(--first-color);
+  border: 1px solid #fd9222;
 }
 
 .link-scroll {
@@ -163,6 +171,7 @@ h4 {
 .link-scroll:hover .scroll-decor,
 .link-scroll:focus .scroll-decor {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .svg-check {
@@ -182,11 +191,11 @@ h4 {
   background-color: rgba(244, 244, 244, 0.5);
 }
 
-/* .is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
 .modal {
   overflow: scroll;
@@ -216,13 +225,28 @@ h4 {
 }
 
 .close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   stroke: var(--primary-text-color);
   position: absolute;
   right: 14px;
   top: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 
   background-color: inherit;
   border: none;
+}
+
+.close-icon:hover {
+  background-color: var(--background-color-hero);
+  color: var(--accent-color);
+}
+
+.close-svg {
+  stroke: currentColor;
 }
 
 .title-modal {
@@ -301,10 +325,9 @@ h4 {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: #000000;
 }
 
-.form-text::placeholder,
+.input-form::placeholder,
 .input-form-tablet::placeholder {
   font-size: 14px;
   line-height: 1.21px;
@@ -357,6 +380,16 @@ h4 {
   resize: none;
 }
 
+.textarea-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
 .imput-phone {
   position: relative;
   padding-left: 106px;
@@ -386,6 +419,11 @@ h4 {
   position: relative;
 }
 
+.icons-input {
+  width: 24px;
+  height: 24px;
+}
+
 .icons-input-mc {
   position: absolute;
   top: 56%;
@@ -405,6 +443,11 @@ h4 {
   background-color: var(--accent-color);
 
   border-radius: 100px;
+}
+
+.btn-submit:hover {
+  color: var(--accent-color);
+  background-color: var(--background-color-hero);
 }
 
 /* ------------TABLET----------------- */
@@ -492,6 +535,41 @@ h4 {
   .input-mr,
   .input-mr-none {
     margin-top: 8px;
+  }
+
+  .input-form::placeholder,
+  .input-form-tablet::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: -0.02em;
+  }
+
+  .textarea-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: -0.02em;
+  }
+
+  .wraper-phone {
+    top: 61%;
+  }
+
+  .text-number {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+  }
+
+  .text-number::after {
+    right: -8px;
+  }
+
+  .close-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 
