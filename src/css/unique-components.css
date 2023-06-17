@@ -23,9 +23,6 @@
 }
 
 .uniq-title {
-font-family: 'Montserrat' sans-serif;
-font-style: normal;
-font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 text-align: center;
@@ -40,14 +37,11 @@ margin-bottom: 24px;
 }
 
 .uniq-par {
-font-family: 'Montserrat' sans-serif;
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: -0.02em;
-color: #111111;
+color: var(--primary-text-color);
 margin-bottom: 32px;
 
 }
@@ -65,16 +59,9 @@ margin-bottom: 32px;
     
 }
 
-.uniq-add-sec {
-    position: absolute;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-     color: var(--primary-text-color);
-     bottom: 28px;
-    left: 28px;
+.uniq-sec-color {
+    color: var(--primary-text-color);
+     
 }
 
 
@@ -82,7 +69,7 @@ margin-bottom: 32px;
 
 
 .overlay {
-background: #FFFFFF;
+background: var(--first-color);
 position: absolute;
 top: 0%;
 left: 0%;
@@ -102,7 +89,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .uniq-list {
     display: flex;
     flex-wrap: wrap;
-   
     row-gap: 20px;
 }
 
@@ -142,22 +128,19 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .uniq-name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 1.22px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+    
     
 }
 
 .button-wrapper {
 display: flex;
 gap: 6px;
-margin-top: 8px;
 margin-bottom: 14px;
 }
 
@@ -176,34 +159,16 @@ height: 24px;
 }
 
 .uniq-text-n {
-    font-size: 10px;
-    line-height: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--first-color);
-    background: var(--accent-color);
-    border-radius: 35px;
     width: 55px;
     height: 24px;
 }
 
 .uniq-text-s {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--first-color);
-    background: var(--accent-color);
-    border-radius: 35px;
     width: 114px;
     height: 24px;
 }
 
 .uniq-current-text {
-font-weight: 400;
 font-size: 10px;
 line-height: 12px;
 display: flex;
@@ -221,7 +186,7 @@ height: 24px;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #111111;
+    color: var(--primary-text-color);
         
     }
 
@@ -257,31 +222,17 @@ height: 24px;
     padding-bottom: 100px;
 }
 
-.uniq-title {
-    font-family: 'Montserrat' sans-serif;
-    font-style: normal;
-    font-weight: 600;
+   .uniq-title {
     font-size: 24px;
     line-height: 1.16;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #111111;
-    max-width: 411px;
+     max-width: 411px;
     margin: 0 auto;
     margin-bottom: 28px;
     }
     
-    .colortext {
-        color: var(--accent-color);
-    }
+    
 
     .uniq-par {
-        font-size: 14px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #111111;
         max-width: 486px;
         margin: 0 auto;
         margin-bottom: 50px;
@@ -297,39 +248,12 @@ height: 24px;
         }
 
            .menu-item {
-            padding: 28px 56px 71px 56px;  
-            overflow: hidden;
+            padding: 28px 56px 71px 56px; 
+            border-radius: 15px; 
+            
            }
 
-        .menu-item:first-child {
-            background: var(--accent-color);
-            border-radius: 15px;
-        }
-
-        .menu-item:nth-child(2) {
-            background: var(--first-color);
-            border: 1px solid #FD9222;
-            border-radius: 15px;
-        }
-
-
-        .menu-item:nth-child(3) {
-            background: var(--primary-color);
-            border-radius: 15px;
-        }
-
         
-        .menu-item:last-child {
-            background: #FFFFFF;
-            border: 1px solid #FD9222;
-            border-radius: 15px;
-        }
-        
-        .uniq-img {
-            
-            width: 224px;
-            height: 171px;
-        }
     }
         
 
@@ -350,27 +274,14 @@ height: 24px;
         .uniq-title {
             font-size: 24px;
             line-height: 1.16;
-            text-align: center;
-            letter-spacing: -0.03em;
-            text-transform: uppercase;
-            color: #111111;
             max-width: 411px;
             margin: 0 auto;
             margin-bottom: 28px;
             }
 
-        .colortext {
-            color: var(--accent-color);
-         }   
+          
 
          .uniq-par {
-            font-size: 14px;
-            line-height: 1.2;
-            text-align: center;
-            letter-spacing: -0.02em;
-            color: #111111;
-            max-width: 486px;
-            margin: 0 auto;
             margin-bottom: 50px;
             
             }
@@ -384,86 +295,11 @@ height: 24px;
 
             .menu-item {
                 padding: 28px 36px 82px 28px; 
-                overflow: hidden;
-            }
-
-            .menu-item:first-child {
-                background: var(--accent-color);
-                border-radius: 15px;
-            }
-
-            .menu-item:nth-child(2) {
-                  
-                background: #FFFFFF;
-                border: 1px solid #FD9222;
-                border-radius: 15px;
-            }
-
-
-            .menu-item:nth-child(3) {
-                
-                background: var(--primary-color);
-                border-radius: 15px;
-            }
-
-            
-            .menu-item:last-child {
-                
-                background: var(--first-color);
-                border: 1px solid #FD9222;
-                border-radius: 15px;
-            }
-
-            .uniq-sec {
-                
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 18px;
-                letter-spacing: -0.02em;
-                text-transform: uppercase;
-                color: var(--first-color);
                 
             }
 
-
-            .uniq-add-sec {
-                position: absolute;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 18px;
-                letter-spacing: -0.02em;
-                text-transform: uppercase;
-                 color: var(--primary-text-color);
-                 bottom: 28px;
-                left: 28px;
-            }
-
-            .uniq-add-sec {
-                position: absolute;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 18px;
-                letter-spacing: -0.02em;
-                text-transform: uppercase;
-                 color: var(--primary-text-color);
-                 bottom: 28px;
-                left: 28px;
-            }
-
-            .uniq-name {
-                
-               max-width: 214px;
-                font-size: 18px;
-                line-height: 1.22px;
-                letter-spacing: -0.03em;
-                text-transform: uppercase;
-                color: var(--primary-text-color);
-                
-                
-            }
-
-            
-
+                           
+                      
             .button-wrapper {
                 display: flex;
                 gap: 6px;
@@ -472,46 +308,20 @@ height: 24px;
             
             
 
-                .uniq-add-par {
-                    font-size: 14px;
-                    line-height: 1.2;
-                    letter-spacing: -0.02em;
-                    color: var(--primary-text-color);
-                        
-                    }
+                
 
             .overlay {
-                background: var(--first-color);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+                padding: 20px;
                 overflow-y: scroll;
                 transform: translate(0px, 100%);
                 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
                 
-                .menu-item:hover .overlay,
-                .menu-item:focus .overlay {
-                    transform: translateY(0%);
-                    transform: translateY(0%);
-                }
+                
 
             
             
-            .uniq-img {
-                width: 206px;
-                height: 160px;
-                margin-top: 28px;
-                background: url(kisspng-milk-white-chocolate-hot-chocolate-chocolate-bar-c-5af7417b10bc19.png);
-                
-                
-                
-                
-            }
-
-        }
+           }
 
 
            
