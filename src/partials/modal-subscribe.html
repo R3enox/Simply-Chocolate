@@ -1,7 +1,37 @@
-<div class="subscribe-backdrop">
+<div class="backdrop">
   <div class="subscribe-modal">
+    <div class="subscribe-modal-picture">
+      <picture>
+        <source
+          srcset="
+            ./img/subscribe/subscribe-chocolate-tablet-desktop@1x.jpg 1x,
+            ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          width="538"
+        />
+
+        <source
+          srcset="
+            ./img/subscribe/subscribe-chocolate-mobile@1x.jpg 1x,
+            ./img/subscribe/subscribe-chocolate-mobile@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          width="311"
+        />
+
+        <img
+          class="subscribe-modal-img"
+          src="/src/img/subscribe/subscribe-chocolate-mobile@1x.jpg"
+          alt="New chocolate"
+        />
+      </picture>
+    </div>
     <h2 class="subscribe-modal-title">
-      Explore our <span>new chocolate</span> first!
+      Explore our<br /><span class="subscribe-modal-title-span"
+        >new chocolate</span
+      >
+      first!
     </h2>
     <form class="subscribe-email-form">
       <input
@@ -17,7 +47,7 @@
       <button type="submit" class="subscribe-form-btn">Submit</button>
     </form>
     <button type="button" class="subscribe-modal-close-btn">
-      <svg class="subscribe-modal-close-icon" width="12" height="12">
+      <svg class="subscribe-modal-close-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
