@@ -60,12 +60,7 @@
     width 250ms cubic-bezier(0.4, 0, 0.2, 1),
     height 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .subscribe-modal-close-btn:hover > .subscribe-modal-close-icon,
-.subscribe-modal-close-btn:focus > .subscribe-modal-close-icon {
-  stroke: var(--accent-color);
-  width: 40px;
-  height: 40px;
-} */
+
 .subscribe-email-form {
   display: flex;
 }
@@ -105,8 +100,78 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .subscribe-form-btn:hover,
-.subscribe-form-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--background-color-hero);
-} */
+@media screen and (max-width: 767px) {
+  .subscribe-form-btn-subscribe {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form-btn-submit {
+    display: none;
+  }
+  .subscribe-modal {
+    width: 538px;
+    min-height: 412px;
+    padding: 236px 40px 40px 40px;
+  }
+  .subscribe-modal-picture {
+    position: relative;
+  }
+  .subscribe-modal-img {
+    position: fixed;
+    width: 538px;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;
+  }
+  .subscribe-modal-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+  }
+
+  .subscribe-modal-close-btn {
+    top: 24px;
+    right: 24px;
+    padding: 7px;
+  }
+  .subscribe-modal-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .subscribe-email-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subscribe-email-input {
+    width: 313px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 24px;
+    border-radius: 30px;
+  }
+  .subscribe-form-btn {
+    padding: 17px 33px;
+    min-width: 137px;
+    height: 52px;
+    font-size: 14px;
+    line-height: 1.21;
+    right: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form-btn:hover,
+  .subscribe-form-btn:focus {
+    color: var(--accent-color);
+    background-color: var(--background-color-hero);
+  }
+
+  .subscribe-modal-close-btn:hover > .subscribe-modal-close-icon,
+  .subscribe-modal-close-btn:focus > .subscribe-modal-close-icon {
+    stroke: var(--accent-color);
+    width: 40px;
+    height: 40px;
+  }
+}
