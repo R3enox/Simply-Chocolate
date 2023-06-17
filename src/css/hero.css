@@ -169,7 +169,7 @@ h4 {
   fill: currentColor;
 }
 
-/*-- MODAL-- */
+/*-- MODAL -- */
 
 .backdrop {
   overflow: scroll;
@@ -182,11 +182,11 @@ h4 {
   background-color: rgba(244, 244, 244, 0.5);
 }
 
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .modal {
   overflow: scroll;
@@ -197,10 +197,10 @@ h4 {
   width: 311px;
   background-color: var(--primary-background-color);
   border-radius: 15px;
-  height: 95%;
+
   padding-top: 32px;
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 24px;
+  padding-left: 24px;
   padding-bottom: 32px;
 }
 
@@ -241,16 +241,12 @@ h4 {
 
 .modal-item {
   width: 100%;
-  /* display: flex;
-
-  align-items: center;
-  justify-content: space-between; */
 
   background: var(--first-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 
-  padding: 8px 16px;
+  padding: 7px 15px;
 }
 
 .modal-item:not(:first-child) {
@@ -308,7 +304,8 @@ h4 {
   color: #000000;
 }
 
-.form-text::placeholder {
+.form-text::placeholder,
+.input-form-tablet::placeholder {
   font-size: 14px;
   line-height: 1.21px;
 
@@ -321,6 +318,13 @@ h4 {
   margin-top: 8px;
 }
 
+.input-mr {
+  margin-top: 14px;
+}
+.label-mail-mr {
+  margin-top: 18px;
+}
+
 .imput-wrap {
   position: relative;
 }
@@ -328,7 +332,7 @@ h4 {
 .wraper-phone {
   position: absolute;
   left: 18px;
-  top: 60%;
+  top: 67%;
   transform: translateY(-50%);
 
   display: flex;
@@ -384,7 +388,7 @@ h4 {
 
 .icons-input-mc {
   position: absolute;
-  top: 50%;
+  top: 56%;
   right: 14px;
   transform: translateY(-25%);
 }
@@ -401,13 +405,6 @@ h4 {
   background-color: var(--accent-color);
 
   border-radius: 100px;
-}
-
-.modal-item {
-  padding-left: 20px;
-  padding-top: 24px;
-  padding-right: 20px;
-  padding-bottom: 18px;
 }
 
 /* ------------TABLET----------------- */
@@ -449,6 +446,10 @@ h4 {
   }
   .modal-item {
     flex-basis: calc((100% - 16px) / 3);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 24px;
+    padding-bottom: 18px;
   }
 
   .modal-item:not(:first-child) {
@@ -463,6 +464,7 @@ h4 {
   .wraper-tablet-input {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .input-form-tablet {
@@ -481,6 +483,15 @@ h4 {
 
   .btn-submit {
     width: 133px;
+  }
+
+  .input-mr {
+    margin-left: 16px;
+  }
+
+  .input-mr,
+  .input-mr-none {
+    margin-top: 8px;
   }
 }
 
