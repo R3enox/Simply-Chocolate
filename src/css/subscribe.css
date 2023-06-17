@@ -16,6 +16,7 @@
   }
 }
 .subscribe-section {
+  min-width: 320px;
   max-width: 375px;
   padding-top: 62px;
   padding-bottom: 63px;
