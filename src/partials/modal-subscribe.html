@@ -4,16 +4,33 @@
       <picture>
         <source
           srcset="
-            ./img/subscribe/subscribe-chocolate-tablet-desktop@1x.jpg 1x,
+            ./img/subscribe/subscribe-chocolate-mobile.webp            q1x,
+            ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+          width="538"
+        />
+        <source
+          srcset="
+            ./img/subscribe/subscribe-chocolate-tablet-desktop.jpg    1x,
             ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.jpg 2x
           "
           media="(min-width: 768px)"
           width="538"
         />
-
         <source
           srcset="
-            ./img/subscribe/subscribe-chocolate-mobile@1x.jpg 1x,
+            ./img/subscribe/subscribe-chocolate-mobile.webp    1x,
+            ./img/subscribe/subscribe-chocolate-mobile@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+          width="311"
+        />
+        <source
+          srcset="
+            ./img/subscribe/subscribe-chocolate-mobile.jpg    1x,
             ./img/subscribe/subscribe-chocolate-mobile@2x.jpg 2x
           "
           media="(max-width: 767px)"
@@ -22,7 +39,7 @@
 
         <img
           class="subscribe-modal-img"
-          src="/src/img/subscribe/subscribe-chocolate-mobile@1x.jpg"
+          src="/src/img/subscribe/subscribe-chocolate-mobile.jpg"
           alt="New chocolate"
         />
       </picture>
