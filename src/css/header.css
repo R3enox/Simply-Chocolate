@@ -28,7 +28,6 @@
 }
 
 .logo-text-link {
-    font-family: var(--main-font-family);
     font-style: italic;
     font-weight: 700;
     font-size: 14px;
@@ -149,7 +148,6 @@ current {
     }
 
     .nav-menu-item-link {
-        font-family: var(--main-font-family);
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14px;

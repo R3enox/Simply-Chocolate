@@ -61,7 +61,6 @@
 
 .mobile-navigation-link {
     position: relative;
-    font-family: var(--main-font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
@@ -78,6 +77,7 @@
 .current {
     color: var(--accent-color);
 }
+
 
 .mobile-current-link::after {
     position: absolute;
@@ -145,8 +145,8 @@
     }
 
     .mobile-navigation-list {
-        padding-right: 53px;
-        padding-left: 49px;
+        padding-right: 49px;
+        padding-left: 53px;
     }
 
     .mobile-social-media-icon {
