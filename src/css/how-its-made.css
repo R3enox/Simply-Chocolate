@@ -68,8 +68,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
-  
   }
   
   .icon-on-image {
@@ -152,12 +150,8 @@
       height: 500px;
     }
   
-    .made-picture {
-      height: 500px;
-    }
-  
     .made-recipe-wrapper {
-      width: 335px;
+      max-width: 335px;
     }
   }
   
@@ -187,10 +181,6 @@
       height: 400px;
     }
   
-    .made-picture {
-      height: 400px;
-    }
-  
     .icon-on-image {
       width: 44px;
       height: 44px;
@@ -203,11 +193,13 @@
     }
   
     .made-recipe-wrapper {
-      width: 614px;
+      max-width: 614px;
+    
     }
     
     .made-recipe-subtitle {
       margin-bottom: 28px;
+      max-width: 350px;
     }
   }
   
@@ -222,7 +214,7 @@
   
     .made-recipe-wrapper {
       padding: 32px 32px 34px 32px;
-      width: 516px;
+      max-width: 516px;
     }
   
     .made-recipe-list {
