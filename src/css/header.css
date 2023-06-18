@@ -182,4 +182,14 @@ current {
         animation-duration: 1.5s;
         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
+
+     .logo-icon-link .logo-icon {
+        animation: shakeY;
+        animation-duration: 2s;
+     }
+
+     .menu-burger-open-btn:hover .menu-burger-open-icon {
+        animation: bounceInDown;
+        animation-duration: 0.7s;
+     }
 }
