@@ -105,16 +105,8 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
-  .subscribe-form-btn-subscribe {
-    display: none;
-  }
-}
 
 @media screen and (min-width: 768px) {
-  .subscribe-form-btn-submit {
-    display: none;
-  }
   .subscribe-modal {
     width: 538px;
     min-height: 412px;
@@ -150,7 +142,7 @@
     justify-content: space-between;
   }
   .subscribe-email-input {
-    width: 313px;
+    min-width: 313px;
     height: 52px;
     font-size: 18px;
     line-height: 1.22;
