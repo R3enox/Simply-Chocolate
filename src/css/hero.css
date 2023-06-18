@@ -246,8 +246,8 @@ h4 {
   position: absolute;
   right: 14px;
   top: 14px;
-  width: 28px;
-  height: 28px;
+  /* width: 28px;
+  height: 28px; */
   border-radius: 50%;
 
   background-color: inherit;
@@ -313,7 +313,7 @@ h4 {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-
+  min-width: 73px;
   color: #111111;
 }
 
@@ -478,6 +478,7 @@ h4 {
     background-image: url(../img/hero/chocolate-tb.jpg);
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
   }
   .container-hero {
     padding-right: 32px;
@@ -500,11 +501,8 @@ h4 {
 
   .modal {
     width: 609px;
-    padding-right: 48px;
-    padding-left: 48px;
+    padding: 48px;
     overflow: auto;
-    padding-top: 45px;
-    padding-bottom: 48px;
   }
 
   .stuff-list {
@@ -515,6 +513,11 @@ h4 {
   .card-link {
     flex-direction: column;
     gap: 14px;
+  }
+
+  .title-modal {
+    font-size: 24px;
+    line-height: 1.17;
   }
 
   .modal-item {
@@ -621,6 +624,28 @@ h4 {
   .icons-input-mc {
     width: 44px;
     height: 30px;
+  }
+
+  .btn-hero-second {
+    min-width: 144px;
+  }
+
+  .btn-hero-second {
+    min-width: 183px;
+  }
+
+  .price-link {
+    padding: 8px 28px;
+    min-width: 96px;
+  }
+
+  .close-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .form-list {
+    margin-top: 40px;
   }
 }
 
