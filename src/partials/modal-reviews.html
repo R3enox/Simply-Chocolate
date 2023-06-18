@@ -1,0 +1,51 @@
+<div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <h2 class="modal-title mobile">
+    leave a review <br />
+    about <span class="accent-color">our chocolate</span>
+  </h2>
+  <h2 class="modal-title not-mobile">
+    leave a review about<br /><span class="accent-color">our chocolate</span>
+  </h2>
+  <form class="reviews-form" name="reviews-form">
+    <input class="reviews-form-input" type="text" placeholder="Name" />
+    <input
+      class="reviews-form-input"
+      type="email"
+      placeholder="Enter your email"
+    />
+    <div class="reviews-form-input-phone-wrapper">
+      <div class="reviews-icon-ccode-wrapper">
+        <svg class="reviews-inon">
+          <use href="../img/icons.svg#icon-ukraine-flag"></use>
+        </svg>
+        <p class="country-code">+380</p>
+      </div>
+      <input
+        class="reviews-form-input-phone"
+        type="tel"
+        placeholder="Phone number"
+      />
+    </div>
+    <textarea
+      class="reviews-form-textarea"
+      type="text"
+      placeholder="Enter text"
+    ></textarea>
+    <button class="reviews-modal-form-btn" type="submit">Send</button>
+  </form>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+
+<script src="../js/modal-reviews.js"></script>

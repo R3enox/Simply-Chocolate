@@ -1,0 +1,297 @@
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 1;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  /* width: 100%; */
+
+  /* max-width: 500px; */
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 311px;
+    padding: 32px 24px;
+  }
+
+  .modal-title.mobile {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .modal-title.not-mobile {
+    display: none;
+  }
+
+  .reviews-form-input,
+  .reviews-form-textarea {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+  }
+  .reviews-form-input:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .reviews-form-input-phone-wrapper {
+    margin-bottom: 14px;
+  }
+
+  .reviews-form-input-phone {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 106px;
+  }
+
+  .reviews-icon-ccode-wrapper {
+    padding-left: 18px;
+    gap: 8px;
+    padding-right: 8px;
+    margin-right: 14px;
+  }
+
+  .reviews-inon {
+    width: 24px;
+    height: 18px;
+  }
+
+  .country-code {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .reviews-form-textarea {
+    height: 91px;
+  }
+
+  .reviews-form-input::placeholder,
+  .reviews-form-textarea::placeholder,
+  .reviews-form-input-phone::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .reviews-modal-form-btn {
+    padding: 12px 28px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+
+.modal__cross:hover,
+.modal__cross:hover {
+  width: 17px;
+  height: 17px;
+  fill: var(--accent-color);
+}
+
+.modal-title {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  text-align: start;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.reviews-form-input,
+.reviews-form-textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  outline-color: var(--accent-color);
+}
+
+.reviews-form-input::placeholder,
+.reviews-form-textarea::placeholder,
+.reviews-form-input-phone::placeholder {
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.reviews-form-input-phone-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.reviews-icon-ccode-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 2px solid rgba(46, 47, 66, 0.2);
+}
+
+.country-code {
+  font-weight: 500;
+}
+
+.reviews-form-input-phone {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  outline-color: var(--accent-color);
+}
+
+.reviews-form-textarea {
+  resize: none;
+}
+
+.reviews-modal-form-btn {
+  display: block;
+  margin-top: 18px;
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.reviews-modal-form-btn:hover,
+.reviews-modal-form-btn:focus {
+  color: var(--accent-color);
+  background: var(--background-color-hero);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 517px;
+    padding: 40px;
+  }
+
+  .modal-title.mobile {
+    display: none;
+  }
+
+  .modal-title.not-mobile {
+    display: block;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .reviews-form-input:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .reviews-form-input,
+  .reviews-form-textarea {
+    padding-top: 22px;
+    padding-left: 24px;
+    padding-bottom: 22px;
+  }
+
+  .reviews-form-input-phone {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 177px;
+  }
+
+  .reviews-form-input-phone-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .reviews-icon-ccode-wrapper {
+    left: 24px;
+    gap: 18px;
+    padding-right: 32px;
+    margin-right: 28px;
+  }
+
+  .reviews-inon {
+    width: 32px;
+    height: 24px;
+  }
+
+  .country-code {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .reviews-form-textarea {
+    height: 137px;
+  }
+
+  .reviews-form-input::placeholder,
+  .reviews-form-textarea::placeholder,
+  .reviews-form-input-phone::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .reviews-modal-form-btn {
+    padding: 14px 40px;
+  }
+}
