@@ -545,8 +545,8 @@ h4 {
     line-height: 1.28;
   }
   .img-card {
-    width: 120px;
-    height: 107px;
+    width: 100%;
+    height: auto;
   }
 
   .wraper-tablet-input {
