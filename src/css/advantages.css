@@ -1,11 +1,12 @@
 .advantages {
-    background-color: #1e1823;
+    background-color: var(--primary-color);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767.9px) {
     .advantages {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
 }
 
@@ -26,12 +27,10 @@
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199.9px) {
     .advantages-container {
-        list-style-type: none;
         display: flex;
-        justify-content: flex-start;
-        align-items: start;
-        flex-wrap: wrap;
-        gap: 60px;
+        flex-direction: row;
+        column-gap: 60px;
+        row-gap: 33px;
     }
 }
 
@@ -50,9 +49,9 @@
 
 @media only screen and (min-width: 1200px) {
     .adv-desktop {
-        padding: 0 50px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
     }
 }
 
@@ -69,26 +68,24 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.22;
-    color: #FFF;
+    color: var(--first-color);
 }
 
 .advantages-section-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #ffffffb3;
+    color: var(--first-text-color);
 }
 
 @media only screen and (min-width: 375px) {
     .advantages-section-text {
-        display: block;
         max-width: 308px;
     }
 }
 
 .advantages-icon {
-    fill: #fd9222;
+    fill: var(--accent-color);
 }
 
 .advantages-item-icon {
