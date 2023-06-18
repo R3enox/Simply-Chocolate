@@ -27,8 +27,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/project-of-future-seniors/assets/index-bcdd80d5.js"></script>
-    <link rel="stylesheet" href="/project-of-future-seniors/assets/index-ff5c07e7.css">
+    <script type="module" crossorigin src="/project-of-future-seniors/assets/index-d8675268.js"></script>
+    <link rel="stylesheet" href="/project-of-future-seniors/assets/index-71832bc0.css">
   </head>
   <body>
     <header class="header">
@@ -115,7 +115,9 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button class="subscribe-btn" type="button">Subscribe</button>
+    <button class="subscribe-btn" data-modal-open-s type="button">
+      Subscribe
+    </button>
   </div>
 </section>
 
@@ -257,7 +259,63 @@
     </div>
 </div>
     
-    
+    <div class="backdrop is-hidden" data-modal-s>
+  <div class="subscribe-modal">
+    <div class="subscribe-modal-picture">
+      <picture>
+        <source
+          srcset="/project-of-future-seniors/assets/subscribe-chocolate-mobile-683f27a8.webp 1x, /project-of-future-seniors/assets/subscribe-chocolate-tablet-desktop@2x-f15ae910.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="/project-of-future-seniors/assets/subscribe-chocolate-tablet-desktop-350e3af1.jpg 1x, /project-of-future-seniors/assets/subscribe-chocolate-tablet-desktop@2x-f7c1c0e3.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/project-of-future-seniors/assets/subscribe-chocolate-mobile-683f27a8.webp 1x, /project-of-future-seniors/assets/subscribe-chocolate-mobile@2x-9cb96c9f.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="/project-of-future-seniors/assets/subscribe-chocolate-mobile-b3eb6ba5.jpg 1x, /project-of-future-seniors/assets/subscribe-chocolate-mobile@2x-0ab1d56a.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="subscribe-modal-img"
+          src="/project-of-future-seniors/assets/subscribe-chocolate-mobile-b3eb6ba5.jpg"
+          alt="New chocolate"
+        />
+      </picture>
+    </div>
+    <h2 class="subscribe-modal-title">
+      Explore our<br /><span class="subscribe-modal-title-span"
+        >new chocolate</span
+      >
+      first!
+    </h2>
+    <form class="subscribe-email-form">
+      <input
+        class="subscribe-email-input"
+        type="email"
+        name="user_email"
+        placeholder="Enter your email"
+        pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        title="example@email.com"
+        autofocus
+        required
+      />
+      <button type="submit" class="subscribe-form-btn">Submit</button>
+    </form>
+
+    <button type="button" class="subscribe-modal-close-btn" data-modal-close-s>
+      <svg class="subscribe-modal-close-icon" width="24" height="24">
+        <use href="/project-of-future-seniors/assets/icons-c81216da.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
   </body>
