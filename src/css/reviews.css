@@ -124,8 +124,8 @@
   background-color: transparent;
   border: 1px solid #fd9222;
   border-radius: 100px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-btn);
+  transition: color var(--transition-btn);
 }
 
 .reviews-button:hover,
