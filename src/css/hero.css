@@ -59,7 +59,7 @@ h4 {
 
 .container-bg-hero {
   padding-top: 395px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   background-image: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
@@ -113,6 +113,7 @@ h4 {
   color: var(--first-color);
 }
 .btn-hero-first {
+  max-width: 120px;
   background-color: var(--accent-color);
   border: none;
 }
@@ -158,6 +159,8 @@ h4 {
 }
 
 .scroll-decor {
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,6 +179,8 @@ h4 {
 
 .svg-check {
   fill: currentColor;
+  width: 16px;
+  height: 16px;
 }
 
 /*-- MODAL -- */
@@ -274,7 +279,7 @@ h4 {
 }
 
 .modal-item:not(:first-child) {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .card-link {
@@ -312,6 +317,10 @@ h4 {
   border-radius: 10px;
   min-width: 100%;
   height: 45px;
+}
+
+.position-wrap {
+  position: relative;
 }
 
 .input-form:focus,
@@ -355,8 +364,7 @@ h4 {
 .wraper-phone {
   position: absolute;
   left: 18px;
-  top: 67%;
-  transform: translateY(-50%);
+  top: 50%;
 
   display: flex;
   align-items: center;
@@ -419,16 +427,12 @@ h4 {
   position: relative;
 }
 
-.icons-input {
-  width: 24px;
-  height: 24px;
-}
-
 .icons-input-mc {
+  width: 32px;
+  height: 21px;
   position: absolute;
-  top: 56%;
+  top: 50%;
   right: 14px;
-  transform: translateY(-25%);
 }
 
 .btn-submit {
@@ -436,7 +440,7 @@ h4 {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.24;
-  width: 109px;
+  min-width: 109px;
   padding-top: 12px;
   padding-bottom: 12px;
   color: var(--first-color);
@@ -469,6 +473,12 @@ h4 {
     justify-content: space-between;
   }
 
+  .title-hero {
+    max-width: 484px;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
   /* ---------------Modal-tablet------------ */
 
   .modal {
@@ -476,19 +486,22 @@ h4 {
     padding-right: 48px;
     padding-left: 48px;
     overflow: auto;
+    padding-top: 45px;
+    padding-bottom: 48px;
   }
 
   .stuff-list {
     display: flex;
-    gap: 16px;
+    justify-content: space-between;
   }
 
   .card-link {
     flex-direction: column;
     gap: 14px;
   }
+
   .modal-item {
-    flex-basis: calc((100% - 16px) / 3);
+    flex-basis: calc((100% - 32px) / 3);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 24px;
@@ -499,6 +512,10 @@ h4 {
     margin-top: 0;
   }
 
+  .form-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
   .img-card {
     width: 120px;
     height: 107px;
@@ -525,7 +542,7 @@ h4 {
   }
 
   .btn-submit {
-    width: 133px;
+    min-width: 133px;
   }
 
   .input-mr {
@@ -554,6 +571,12 @@ h4 {
 
   .wraper-phone {
     top: 61%;
+    left: 24px;
+    transform: translateY(-43%);
+  }
+
+  .imput-phone {
+    padding-left: 155px;
   }
 
   .text-number {
@@ -561,20 +584,32 @@ h4 {
     font-size: 18px;
     line-height: 1.22;
     text-align: center;
+    transform: translateY(2px);
   }
 
   .text-number::after {
-    right: -8px;
+    right: -32px;
   }
 
   .close-icon {
     width: 40px;
     height: 40px;
   }
+
+  .icons-input {
+    width: 32px;
+    height: 32px;
+  }
+
+  .icons-input-mc {
+    width: 44px;
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container-bg-hero {
+    padding-top: 671px;
     background-image: url(../img/hero/chocolate-tb.jpg);
   }
 }
@@ -584,5 +619,46 @@ h4 {
   (min-resolution: 2dppx) and (min-width: 768px) {
   .container-bg-hero {
     background-image: url(../img/hero/chocolate-tb@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-bg-hero {
+    padding-top: 381px;
+    padding-bottom: 40px;
+    background-image: url(../img/hero/hero-bg@1x.jpg);
+  }
+
+  .btn-hero-first {
+    min-width: 144px;
+  }
+
+  .btn-hero-second {
+    display: flex;
+    justify-content: center;
+    min-width: 183px;
+  }
+
+  .link-scroll {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .scroll-decor {
+    width: 38px;
+    height: 38px;
+  }
+
+  .svg-check {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-device-ratio: 2) and (min-width: 1199px),
+  (min-resolution: 192dpi) and (min-width: 1199px),
+  (min-resolution: 2dppx) and (min-width: 1199px) {
+  .container-bg-hero {
+    background-image: url(../img/hero/hero-bg@2x.jpg);
   }
 }
