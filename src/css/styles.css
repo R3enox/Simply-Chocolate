@@ -42,5 +42,5 @@
 
 body {
   font-family: var(--main-font-family);
-  background-color: var(--background-color);
+  background-color: var(--primary-background-color);
 }
