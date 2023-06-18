@@ -31,7 +31,7 @@
 }
 
 .title-orange {
-    color: var(--accent-color);       
+    color: var(--accent-color);   
 }
 
 .footer-section-description {
@@ -51,11 +51,11 @@
 
 .footer-list-link {
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--first-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-text);
 }
 
 .footer-list-link:hover,
@@ -106,7 +106,7 @@
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--first-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-text);
 }
 
 .footer-nav-link:hover,
