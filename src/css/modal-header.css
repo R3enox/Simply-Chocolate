@@ -1,3 +1,4 @@
+
 .mobile-menu {
     position: fixed;
     width: 220px;
@@ -48,7 +49,7 @@
     stroke: var(--accent-color);
     width: 40px;
     height: 40px;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke var(--transition-btn);
 }
 
 .mobile-navigation-list {
@@ -66,8 +67,7 @@
     line-height: 1.14px;
     letter-spacing: -0.02em;
     color: var(--first-color);
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    transition: color 250ms cubic-bezier(.17,.67,.54,.42);
+    transition: color var(--transition-text);
 }
 
 .mobile-navigation-link:hover,
@@ -89,7 +89,7 @@
     height: 1px;
     border-radius: 1px;
     background-color: var(--accent-color);
-    transition: background-color var(--transition-dur-and-func);
+    transition: background-color var(--transition-btn);
     display: none;
 }
 
@@ -108,7 +108,7 @@
     stroke: var(--accent-color);
     animation: heartBeat;
     animation-duration: 1500ms;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke var(--transition-btn);
 }
 
 .mobile-social-media-container {
