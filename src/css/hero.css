@@ -242,12 +242,13 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  stroke: var(--primary-text-color);
+  color: var(--primary-text-color);
   position: absolute;
   right: 14px;
   top: 14px;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
   border-radius: 50%;
 
   background-color: inherit;
@@ -259,12 +260,18 @@ h4 {
 .close-icon:hover {
   background-color: var(--background-color-hero);
   color: var(--accent-color);
-  transform: scale(138%);
 }
 
 .close-svg {
+  width: 24px;
+  height: 24px;
   stroke: currentColor;
 }
+
+/* .close-icon:hover .close-svg {
+  width: 16px;
+  height: 16px;
+} */
 
 .title-modal {
   text-align: center;
@@ -613,8 +620,10 @@ h4 {
   }
 
   .close-icon {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
   }
 
   .icons-input {
