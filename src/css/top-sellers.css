@@ -1,0 +1,175 @@
+.top_sellers_section {
+    /* background-color: teal; */
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.top_seller_conteiner {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: grey; */
+}
+
+.top_sellers_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.top_seller_accent {
+    color: #FD9222;
+}
+
+
+.top_sellers_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.top_sellers_item {
+    display: flex;
+}
+
+.top_sellers_img {
+    border-radius: 15px;
+}
+
+/* 3те зображення, з'являється на */
+.top_sellers_item_only_pc {
+    display: none;
+}
+
+.top_seller_text {
+    max-width: 306px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.top_seller_paragraf {
+    display: none;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    margin: 0px;
+}
+
+.top_sellers_bottom_info {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.top_seller_button {
+    min-width: 120px;
+    display: block;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 100px;
+    background-color: #FD9222;
+    color: #FFFFFF;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    transition: color var(--transition-btn),
+        background-color var(--transition-btn);
+}
+
+.top_seller_button:hover,
+.top_seller_button:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+/* зміна шириши контейнера */
+@media screen and (min-width: 768px) {
+    .top_sellers_section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .top_seller_conteiner {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top_sellers_title {
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 1.17;
+
+    }
+
+    .top_sellers_list {
+        display: flex;
+        gap: 16px;
+    }
+    .top_sellers_item {
+        flex-basis: calc((100% - 16px)/2);
+    }
+    .top_seller_text {
+        display: none;
+        margin-bottom: 0px;
+    }
+
+    .top_seller_paragraf {
+        display: flex;
+        max-width: 306px;
+    }
+
+    .top_seller_button {
+        min-width: 162px;
+        padding: 14px 40px;
+    }
+
+    .top_sellers_bottom_info {
+        display: flex;
+        margin-top: 32px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .top_sellers_section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        ;
+    }
+
+    .top_seller_conteiner {
+        max-width: 1200px;
+    }
+
+    .top_sellers_list {
+        flex-wrap: nowrap;
+    }
+
+    .top_sellers_item {
+        flex-basis: calc((100% - 32px)/3);
+    }
+    .top_seller_paragraf {
+        display: flex;
+        max-width: 407px;
+    }
+
+    .top_sellers_item_only_pc {
+        display: flex;
+    }
+}
