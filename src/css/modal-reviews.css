@@ -50,6 +50,8 @@
 
   .modal-title.mobile {
     display: block;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .modal-title.not-mobile {
@@ -58,13 +60,21 @@
 
   .reviews-form-input,
   .reviews-form-textarea {
-    padding: 14px 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+  }
+  .reviews-form-input:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .reviews-form-input-phone-wrapper {
+    margin-bottom: 14px;
   }
 
   .reviews-form-input-phone {
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-right: 18px;
     padding-left: 106px;
   }
 
@@ -118,8 +128,8 @@
 /* Стили для кнопки закрытия */
 
 .modal__cross {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -127,16 +137,20 @@
   cursor: pointer;
 }
 
+.modal__cross:hover,
+.modal__cross:hover {
+  width: 17px;
+  height: 17px;
+  fill: var(--accent-color);
+}
+
 .modal-title {
   margin-bottom: 32px;
 
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  width: 255px;
   text-align: start;
 }
 
@@ -152,10 +166,6 @@
   outline-color: var(--accent-color);
 }
 
-.reviews-form-input:not(:last-child) {
-  margin-bottom: 14px;
-}
-
 .reviews-form-input::placeholder,
 .reviews-form-textarea::placeholder,
 .reviews-form-input-phone::placeholder {
@@ -169,7 +179,6 @@
   position: relative;
   align-items: center;
   width: 100%;
-  margin-bottom: 14px;
 }
 
 .reviews-icon-ccode-wrapper {
@@ -211,6 +220,12 @@
   color: #ffffff;
 }
 
+.reviews-modal-form-btn:hover,
+.reviews-modal-form-btn:focus {
+  color: var(--accent-color);
+  background: var(--background-color-hero);
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 517px;
@@ -223,18 +238,29 @@
 
   .modal-title.not-mobile {
     display: block;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .reviews-form-input:not(:last-child) {
+    margin-bottom: 18px;
   }
 
   .reviews-form-input,
   .reviews-form-textarea {
-    padding: 22px 24px;
+    padding-top: 22px;
+    padding-left: 24px;
+    padding-bottom: 22px;
   }
 
   .reviews-form-input-phone {
     padding-top: 22px;
     padding-bottom: 22px;
-    padding-right: 24px;
     padding-left: 177px;
+  }
+
+  .reviews-form-input-phone-wrapper {
+    margin-bottom: 18px;
   }
 
   .reviews-icon-ccode-wrapper {
