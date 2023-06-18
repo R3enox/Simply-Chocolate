@@ -5,6 +5,12 @@
 .list {
     list-style: none;
 }
+
+.our-products-container {
+    padding-top: 36px;
+    padding-bottom: 69px;
+}
+
 .our-products-title {
     display: flex;
     justify-content: center;
@@ -23,6 +29,11 @@
 
 .our-products-title-span {
     color: #FD9222;    
+}
+
+.swiper-horizontal {
+    height: 371px;
+    cursor: grab;
 }
 
 .swiper-wrapper {
@@ -97,6 +108,12 @@
     color: #111111;
 }
 
+.our-products-item-price:hover,
+.our-products-item-price:focus {
+    background: #b7b3b3;    
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .swiper-button-prev, .swiper-button-next {
     appearance: none;
     visibility: hidden;
@@ -127,11 +144,15 @@
 }
 @media screen and (max-width: 768px) {
 .swiper {
-        width: 335px;        
+    width: 335px;        
     }
 }
 
 @media screen and (min-width: 768px) {
+.our-products-container {
+    padding-top: 50px;
+    padding-bottom: 95px;
+    }
 
 .our-products-title {     
     font-size: 24px;
@@ -143,20 +164,27 @@
     }
     
 .swiper-slide {
-    width: 270px !important;
+    width: 270px !important;    
     }
+
+.swiper-slide:hover,
+.swiper-slide:focus {    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 4px rgba(46, 47, 66, 0.16), 0px 2px 4px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
 
 .swiper-pagination {
     margin-top: 32px;
 }
 }
-
+/*
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 .first-item {
     margin-left: 32px;
 }
 }
-
+*/
 
 @media screen and (min-width: 1200px) {
 
@@ -166,5 +194,10 @@
 
     .swiper-wrapper {
         gap: 18px;
+    }
+
+    .our-products-container {
+        padding-top: 64px;
+        padding-bottom: 96px;
     }
 }
