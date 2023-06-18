@@ -42,7 +42,6 @@
 }
 
 .top_sellers_img {
-    width: 100%;
     border-radius: 15px;
 }
 
@@ -119,7 +118,9 @@
         display: flex;
         gap: 16px;
     }
-
+    .top_sellers_item {
+        flex-basis: calc((100% - 16px)/2);
+    }
     .top_seller_text {
         display: none;
         margin-bottom: 0px;
@@ -152,14 +153,15 @@
 
     .top_seller_conteiner {
         max-width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .top_sellers_list {
         flex-wrap: nowrap;
     }
 
+    .top_sellers_item {
+        flex-basis: calc((100% - 32px)/3);
+    }
     .top_seller_paragraf {
         display: flex;
         max-width: 407px;
