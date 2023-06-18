@@ -1,0 +1,146 @@
+.top_seller_conteiner {
+
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.top_sellers_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.top_seller_accent {
+    color: #FD9222;
+}
+
+
+.top_sellers_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.top_sellers_item {
+    display: flex;
+
+}
+
+.top_sellers_pic {
+    max-width: 344px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* 3те зображення, з'являється на */
+.top_sellers_item_only_pc {
+    display: none;
+}
+
+.top_seller_text {
+    display: block;
+    max-width: 307px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.top_seller_paragraf {
+    display: none;
+}
+
+.top_sellers_bottom_info {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.top_seller_button {
+    display: block;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #FD9222;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.top_seller_button:hover,
+.top_seller_button:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+/* зміна шириши контейнера */
+@media screen and (min-width: 768px) {
+    .top_seller_conteiner {
+        max-width: 768px;
+    }
+
+    .top_sellers_list {
+        gap: 16px;
+    }
+
+    .top_sellers_pic {
+        height: 464px;
+    }
+
+    .top_seller_text {
+        display: none;
+        margin-bottom: 0px;
+    }
+
+    .top_seller_paragraf {
+        display: flex;
+        max-width: 306px;
+    }
+
+    .top_sellers_bottom_info {
+        display: flex;
+        margin-top: 32px;
+        margin-left: 16px;
+        margin-right: 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .top_seller_conteiner {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .top_sellers_item_only_pc {
+        display: flex;
+    }
+
+    .top_seller_paragraf {
+        display: flex;
+        max-width: 407px;
+    }
+
+    .top_sellers_bottom_info {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
