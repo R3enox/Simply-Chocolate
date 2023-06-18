@@ -51,10 +51,7 @@ h4 {
 /* ----------HERO-MOBILE-375PX------------ */
 
 .section-hero {
-  margin-top: 14px;
-  background-color: --primary-background-color;
-  /* margin-right: auto;
-  margin-left: auto; */
+  padding-bottom: 71px;
 }
 
 .container-bg-hero {
@@ -480,6 +477,10 @@ h4 {
 /* ------------TABLET----------------- */
 
 @media screen and (min-width: 768px) {
+  .section-hero {
+    padding-bottom: 50px;
+  }
+
   .container-bg-hero {
     background-image: url(../img/hero/chocolate-tb.jpg);
     padding-left: 40px;
@@ -673,6 +674,10 @@ h4 {
 }
 
 @media screen and (min-width: 1200px) {
+  .section-hero {
+    padding-bottom: 72px;
+  }
+
   .container-bg-hero {
     padding-top: 381px;
     padding-bottom: 40px;
