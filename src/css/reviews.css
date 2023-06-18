@@ -88,11 +88,6 @@
   letter-spacing: -0.02em;
 }
 
-.swiper {
-  /* width: 355px; */
-  /* height: 320px; */
-}
-
 .swiper-pagination {
   position: static;
   margin-top: 20px;
@@ -121,15 +116,17 @@
   /* identical to box height */
   color: var(--primary-text-color);
 
-  background: transparent;
+  background-color: transparent;
   border: 1px solid #fd9222;
   border-radius: 100px;
+  transition: background-color var(--transition-btn);
+  transition: color var(--transition-btn);
 }
 
 .reviews-button:hover,
 .reviews-button:focus {
   color: var(--first-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 /* ========== TABLET ========== */

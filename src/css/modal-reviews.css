@@ -135,6 +135,7 @@
   right: 20px;
   fill: #444;
   cursor: pointer;
+  transition: fill var(--transition-btn);
 }
 
 .modal__cross:hover,
@@ -208,7 +209,7 @@
 .reviews-modal-form-btn {
   display: block;
   margin-top: 18px;
-  background: #fd9222;
+  background-color: #fd9222;
   border-radius: 100px;
   border: none;
 
@@ -218,6 +219,8 @@
   /* identical to box height */
 
   color: #ffffff;
+  transition: background-color var(--transition-btn);
+  transition: color var(--transition-btn);
 }
 
 .reviews-modal-form-btn:hover,
