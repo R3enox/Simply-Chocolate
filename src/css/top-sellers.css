@@ -1,25 +1,24 @@
-.top_seller_section {
+.top_sellers_section {
+    background-color: teal;
     padding-top: 36px;
     padding-bottom: 36px;
-
 }
 
 .top_seller_conteiner {
-
     max-width: 375px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
     align-items: center;
-    /* background-color: grey; */
+    background-color: grey;
 }
 
 .top_sellers_title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 1.17%;
 
     text-align: center;
     letter-spacing: -0.03em;
@@ -35,9 +34,7 @@
 
 
 .top_sellers_list {
-    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
     padding-left: 0px;
 }
@@ -47,7 +44,6 @@
 }
 
 .top_sellers_img {
-    max-width: 344px;
     width: 100%;
     border-radius: 15px;
 }
@@ -58,14 +54,27 @@
 }
 
 .top_seller_text {
-    display: block;
-    max-width: 307px;
+    max-width: 306px;
     margin-top: 20px;
     margin-bottom: 32px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
 }
 
 .top_seller_paragraf {
     display: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    margin: 0px;
 }
 
 .top_sellers_bottom_info {
@@ -75,18 +84,18 @@
 }
 
 .top_seller_button {
-    min-width: 144px;
+    min-width: 120px;
     display: block;
-    padding: 14px 40px;
+    padding: 12px 28px;
     border: none;
     border-radius: 100px;
     background-color: #FD9222;
     color: #FFFFFF;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
     transition: color var(--transition-btn),
         background-color var(--transition-btn);
 }
@@ -99,7 +108,7 @@
 
 /* зміна шириши контейнера */
 @media screen and (min-width: 768px) {
-    .top_seller_section {
+    .top_sellers_section {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -108,7 +117,13 @@
         max-width: 768px;
     }
 
+    .top_sellers_title {
+        margin-bottom: 50px;
+
+    }
+
     .top_sellers_list {
+        display: flex;
         gap: 16px;
     }
 
@@ -122,18 +137,20 @@
         max-width: 306px;
     }
 
+    .top_seller_button {
+        padding: 14px 40px;
+    }
+
     .top_sellers_bottom_info {
         display: flex;
         margin-top: 32px;
-        margin-left: 16px;
-        margin-right: 16px;
         justify-content: space-between;
         align-items: flex-start;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .top_seller_section {
+    .top_sellers_section {
         padding-top: 64px;
         padding-bottom: 64px;
         ;
@@ -145,8 +162,8 @@
         padding-right: 15px;
     }
 
-    .top_sellers_item_only_pc {
-        display: flex;
+    .top_sellers_list {
+        flex-wrap: nowrap;
     }
 
     .top_seller_paragraf {
@@ -154,8 +171,7 @@
         max-width: 407px;
     }
 
-    .top_sellers_bottom_info {
-        margin-left: 32px;
-        margin-right: 32px;
+    .top_sellers_item_only_pc {
+        display: flex;
     }
 }
