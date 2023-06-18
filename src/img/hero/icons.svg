@@ -1,0 +1,15 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-mastercard" viewBox="0 0 49 32">
+<path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M6.095 0.762h36.571c2.946 0 5.333 2.388 5.333 5.333v19.81c0 2.946-2.388 5.333-5.333 5.333h-36.571c-2.946 0-5.333-2.388-5.333-5.333v-19.81c0-2.946 2.388-5.333 5.333-5.333z"></path>
+<path fill="#ed0006" style="fill: var(--color2, #ed0006)" d="M24.381 23.29c-1.771 1.462-4.068 2.345-6.578 2.345-5.601 0-10.141-4.396-10.141-9.818s4.54-9.818 10.141-9.818c2.51 0 4.807 0.883 6.578 2.345 1.771-1.462 4.068-2.345 6.578-2.345 5.601 0 10.141 4.395 10.141 9.818s-4.54 9.818-10.141 9.818c-2.51 0-4.807-0.883-6.578-2.345z"></path>
+<path fill="#f9a000" style="fill: var(--color3, #f9a000)" d="M24.381 23.29c2.18-1.801 3.563-4.48 3.563-7.472s-1.383-5.672-3.563-7.472c1.771-1.462 4.068-2.345 6.578-2.345 5.601 0 10.141 4.395 10.141 9.818s-4.54 9.818-10.141 9.818c-2.51 0-4.807-0.883-6.578-2.345z"></path>
+<path fill="#ff5e00" style="fill: var(--color4, #ff5e00)" d="M24.381 23.29c2.18-1.801 3.563-4.48 3.563-7.472s-1.383-5.671-3.563-7.472c-2.18 1.801-3.563 4.48-3.563 7.472s1.383 5.672 3.563 7.472z"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M6.095 0.762h36.571c2.946 0 5.333 2.388 5.333 5.333v19.81c0 2.946-2.388 5.333-5.333 5.333h-36.571c-2.946 0-5.333-2.388-5.333-5.333v-19.81c0-2.946 2.388-5.333 5.333-5.333z"></path>
+</symbol>
+<symbol id="icon-ukraine" viewBox="0 0 31 32">
+<path fill="#FFD700" style="fill: var(--color1, #FFD700)" d="M30.559 5.496h-30.326v22.568h30.326v-22.568z"></path>
+<path fill="#0057B7" style="fill: var(--color2, #0057B7)" d="M0.233 5.496h30.326v11.284h-30.326v-11.284z"></path>
+</symbol>
+</defs>
+</svg>
