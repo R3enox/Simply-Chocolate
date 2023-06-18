@@ -106,7 +106,7 @@
 .mobile-social-media-link:focus .mobile-social-media-icon {
     stroke: var(--accent-color);
     animation: heartBeat;
-    animation-duration: 1.5s;
+    animation-duration: 1500ms;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

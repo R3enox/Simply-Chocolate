@@ -39,6 +39,24 @@
 .logo-icon-link {
     display: flex;
 }
+
+.logo-icon-link:hover .logo-icon, 
+ .logo-icon-link:focus .logo-icon {
+    animation: heartBeat;
+    animation-duration: 1500ms;
+ }
+
+ .logo-icon-link .logo-icon {
+    animation: heartBeat;
+    animation-delay: 2200ms;
+    animation-duration: 2000ms;
+ }
+
+ .logo-container {
+    animation: bounceOut;
+    animation-duration: 1000ms;
+    animation-delay: 700ms;
+ }
 /* == /LOGO ==*/
 
 .menu-burger-open-btn {
@@ -71,6 +89,12 @@ current {
        border: none;
        padding: 0;
     }
+
+    .menu-burger-open-btn:active .menu-burger-open-icon {
+        animation: fadeOutUpBig;
+        /* animation-delay: 2800ms; */
+        animation-duration: 3000ms;
+     }
 
     .menu-burger-open-icon {
         stroke: var(--primary-text-color);
@@ -153,7 +177,8 @@ current {
         line-height: 1.14px;
         letter-spacing: -0.02em;
         color: var(--primary-text-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+        transition: color 250ms cubic-bezier(.17,.67,.54,.42);
     }
 
     .nav-menu-item-link:hover,
@@ -179,17 +204,9 @@ current {
     .header-social-media-link:focus .header-social-media-icon{
         stroke: var(--accent-color);
         animation: heartBeat;
-        animation-duration: 1.5s;
-        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        animation-duration: 2000ms;
+        /* transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+        transition: color 250ms cubic-bezier(.17,.67,.54,.42);
      }
 
-     .logo-icon-link .logo-icon {
-        animation: shakeY;
-        animation-duration: 2s;
-     }
-
-     .menu-burger-open-btn:hover .menu-burger-open-icon {
-        animation: bounceInDown;
-        animation-duration: 0.7s;
-     }
 }
