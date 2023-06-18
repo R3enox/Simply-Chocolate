@@ -1,0 +1,142 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .reviews-card-info-wrapper {
+    max-width: 375px;
+  }
+}
+
+.reviews-container {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.reviews .accent-color {
+  color: var(--accent-color);
+}
+
+.reviews-item {
+  position: relative;
+  margin-top: 32px;
+  padding-top: 42px;
+}
+
+.reviews-card-info-wrapper {
+  min-height: 204px;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 26px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+
+.reviews-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+
+.reviews-card-name {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.reviews-card-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.swiper {
+  /* width: 355px; */
+  /* height: 320px; */
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 8px;
+  background: var(--accent-color);
+}
+
+.reviews-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: var(--primary-text-color);
+
+  background: transparent;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+}
+
+/* ========== TABLET ========== */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .reviews-card-info-wrapper {
+    width: 344px;
+  }
+}
+
+/* ========== TABLET & DESKTOP ========== */
+
+@media screen and (min-width: 768px) {
+}
+
+/* ========== DESKTOP ========== */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1168px;
+  }
+
+  .reviews-card-info-wrapper {
+    width: 360px;
+  }
+}
