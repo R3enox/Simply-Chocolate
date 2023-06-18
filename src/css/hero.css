@@ -246,8 +246,8 @@ h4 {
   position: absolute;
   right: 14px;
   top: 14px;
-  /* width: 28px;
-  height: 28px; */
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
 
   background-color: inherit;
@@ -259,6 +259,7 @@ h4 {
 .close-icon:hover {
   background-color: var(--background-color-hero);
   color: var(--accent-color);
+  transform: scale(138%);
 }
 
 .close-svg {
