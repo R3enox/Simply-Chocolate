@@ -1,3 +1,9 @@
+.top_seller_section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+}
+
 .top_seller_conteiner {
 
     max-width: 375px;
@@ -5,6 +11,7 @@
     padding-right: 20px;
     margin: 0 auto;
     align-items: center;
+    background-color: grey;
 }
 
 .top_sellers_title {
@@ -32,15 +39,14 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
+    padding-left: 0px;
 }
 
 .top_sellers_item {
     display: flex;
-
 }
 
-.top_sellers_pic {
+.top_sellers_img {
     max-width: 344px;
     width: 100%;
     border-radius: 15px;
@@ -69,6 +75,7 @@
 }
 
 .top_seller_button {
+    min-width: 144px;
     display: block;
     padding: 14px 40px;
     border: none;
@@ -80,7 +87,8 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-
+    transition: color var(--transition-btn),
+        background-color var(--transition-btn);
 }
 
 .top_seller_button:hover,
@@ -91,16 +99,17 @@
 
 /* зміна шириши контейнера */
 @media screen and (min-width: 768px) {
+    .top_seller_section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .top_seller_conteiner {
         max-width: 768px;
     }
 
     .top_sellers_list {
         gap: 16px;
-    }
-
-    .top_sellers_pic {
-        height: 464px;
     }
 
     .top_seller_text {
@@ -124,6 +133,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .top_seller_section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        ;
+    }
+
     .top_seller_conteiner {
         max-width: 1158px;
         padding-left: 15px;
