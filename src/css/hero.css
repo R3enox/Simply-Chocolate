@@ -130,7 +130,7 @@ h4 {
   align-items: center;
   justify-content: center;
   background-color: inherit;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--first-color);
   text-decoration: none;
 
   transition: var(--transition-btn);
@@ -140,7 +140,7 @@ h4 {
 .btn-hero-second:focus {
   color: var(--accent-color);
   background-color: var(--first-color);
-  border: 1px solid #fd9222;
+  border: 1px solid var(--accent-color);
 }
 
 .link-scroll {
@@ -311,10 +311,6 @@ h4 {
   text-decoration: none;
 }
 
-.img-card {
-  max-width: ;
-}
-
 .price-link {
   background-color: var(--primary-background-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -324,7 +320,7 @@ h4 {
   font-size: 14px;
   line-height: 1.21;
   min-width: 73px;
-  color: #111111;
+  color: var(--primary-text-color);
 }
 
 .form-list {
