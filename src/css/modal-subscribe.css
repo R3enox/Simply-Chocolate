@@ -1,32 +1,10 @@
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--helper-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 311px;
-  min-height: 350px;
-  background: var(--primary-background-color);
-  border-radius: 15px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 201px 24px 32px 24px;
-}
 .subscribe-modal-picture {
   position: relative;
+}
+
+.subscribe-modal-title {
+  margin-top: 169px;
+
 }
 .subscribe-modal-img {
   position: fixed;
@@ -89,6 +67,11 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
 }
+
+.subscribe-email-input::placeholder {
+  color: var(input-text-color);
+}
+
 .subscribe-form-btn {
   position: absolute;
   right: 24px;
@@ -98,8 +81,6 @@
   align-items: center;
   padding: 14px 28px;
   min-width: 100px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -108,8 +89,8 @@
   border-radius: 100px;
   color: var(--first-color);
   background: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-btn),
+    color var(--transition-btn);
 }
 .subscribe-form-btn:hover,
 .subscribe-form-btn:focus {

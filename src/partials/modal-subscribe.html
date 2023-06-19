@@ -1,5 +1,5 @@
-<div class="backdrop is-hidden" data-modal-s>
-  <div class="subscribe-modal">
+<!-- <div class="backdrop is-hidden" data-modal-s> -->
+<div class="modal" data-modal="2">
     <div class="subscribe-modal-picture">
       <picture>
         <source
@@ -59,8 +59,12 @@
       <button type="submit" class="subscribe-form-btn">Submit</button>
     </form>
 
-    <button type="button" class="subscribe-modal-close-btn" data-modal-close-s>
-      <svg class="subscribe-modal-close-icon" width="24" height="24">
+    <button type="button" class="subscribe-modal-close-btn">
+    <svg
+      class="subscribe-modal-close-icon js-modal-close"
+      width="24"
+      height="24"
+    >
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>

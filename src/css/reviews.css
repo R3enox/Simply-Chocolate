@@ -1,7 +1,3 @@
-.reviews {
-  background: #fafafa;
-}
-
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -40,7 +36,7 @@
 .section-subtitle {
   font-weight: 600;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--primary-text-color);
   text-transform: uppercase;
 }
 
@@ -61,9 +57,9 @@
   padding-bottom: 24px;
   padding-left: 18px;
   padding-right: 18px;
-  background: #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  background: var(--first-color);
+  border: 1px solid var(--helper-color);
+  box-shadow: 0px 9.04932px 26.5717px var(--box-shadow-color);
   border-radius: 15px;
 }
 
@@ -117,7 +113,7 @@
   color: var(--primary-text-color);
 
   background-color: transparent;
-  border: 1px solid #fd9222;
+  border: 1px solid var(--accent-color);
   border-radius: 100px;
   transition: background-color var(--transition-btn);
   transition: color var(--transition-btn);

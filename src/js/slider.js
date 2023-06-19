@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-    loop: false,
+    loop: true,
     slidesPerView: 1,
     breakpoints: {
         375: {
