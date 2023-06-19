@@ -130,15 +130,14 @@
 }
 
 @media screen and (min-width: 768px) {
-.our-products-container {
-    
+.our-products-container {    
     padding-top: 50px;
     padding-bottom: 95px;
     }
 .container {
     width: 768px;
     padding-left: 32px;
-    padding-right: 32px;
+    padding-right: 0;
     }
 
 .our-products-title {     
@@ -173,6 +172,13 @@
 
     .container {
         width: 1200px;
+        padding-right: 31px;
+        padding-left: 33px;
+    } 
+    
+    .our-products-container {
+        padding-top: 64px;
+        padding-bottom: 96px;
     }
 
     .swiper {
@@ -183,8 +189,9 @@
         gap: 18px;
     }
 
-    .our-products-container {
-        padding-top: 64px;
-        padding-bottom: 96px;
+    .first-item {
+        padding-left: 0;
     }
+
+   
 }
