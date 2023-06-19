@@ -21,13 +21,13 @@
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--primary-text-color);
     display: block;
     margin-bottom: 32px;
 }
 
 .top_seller_accent {
-    color: #FD9222;
+    color: var(--accent-color);
 }
 
 
@@ -42,6 +42,7 @@
 }
 
 .top_sellers_img {
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -80,8 +81,8 @@
     padding: 12px 28px;
     border: none;
     border-radius: 100px;
-    background-color: #FD9222;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--first-color);
 
     font-weight: 600;
     font-size: 14px;
@@ -92,8 +93,8 @@
 
 .top_seller_button:hover,
 .top_seller_button:focus {
-    background-color: #FCF1E0;
-    color: #FD9222;
+    background-color: var(--background-color-hero);
+    color: var(--accent-color);
 }
 
 /* зміна шириши контейнера */

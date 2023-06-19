@@ -107,6 +107,11 @@
   gap: 18px;
 }
 
+.made-image {
+  width: 100%;
+  min-height: 500px;
+}
+
 .made-recipe-item {
   position: relative;
 }

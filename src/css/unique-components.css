@@ -100,7 +100,7 @@ margin-bottom: 32px;
 
 .bg-white-color {
     background: var(--first-color);
-    border: 1px solid #FD9222;
+    border: 1px solid var(--accent-color);
 }
 
 .bg-black-color {
@@ -108,6 +108,8 @@ margin-bottom: 32px;
 }
 
 .uniq-img {
+    max-height: 100%;
+    max-width: 100%;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 25px;
@@ -179,7 +181,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: var(--primary-text-color);
-border: 1px solid #FD9222;
+border: 1px solid var(--accent-color);
 border-radius: 35px;
 min-width: 93px;
 height: 24px;

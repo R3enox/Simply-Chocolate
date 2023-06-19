@@ -38,13 +38,21 @@
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--first-color);
   transition: 0.3s all;
+  width: 311px;
+  min-height: 350px;
+}
+
+@media screen and (max-width: 374px) {
+  .modal{
+  max-width: 95vw;
+
+  }
 }
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 311px;
     padding: 32px 24px;
   }
 
@@ -172,7 +180,7 @@
 .reviews-form-input-phone::placeholder {
   letter-spacing: -0.02em;
 
-  color: rgba(64, 64, 64, 0.3);
+  color: var(--input-text-color);
 }
 
 .reviews-form-input-phone-wrapper {
@@ -209,7 +217,7 @@
 .reviews-modal-form-btn {
   display: block;
   margin-top: 18px;
-  background-color: #fd9222;
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
 
@@ -218,9 +226,8 @@
   line-height: 17px;
   /* identical to box height */
 
-  color: #ffffff;
-  transition: background-color var(--transition-btn);
-  transition: color var(--transition-btn);
+  color: var(--first-color);
+  transition: background-color var(--transition-btn), color var(--transition-btn);
 }
 
 .reviews-modal-form-btn:hover,
@@ -229,11 +236,37 @@
   background: var(--background-color-hero);
 }
 
+.modalh {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  background-color: var(--primary-background-color);
+  border-radius: 15px;
+
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  max-height: 584px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 374px) {
+  .modalh {
+    max-width: 95vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
-    width: 517px;
+    min-width: 517px;
     padding: 40px;
   }
+
 
   .modal-title.mobile {
     display: none;
@@ -296,5 +329,12 @@
 
   .reviews-modal-form-btn {
     padding: 14px 40px;
+  }
+}
+
+
+@media screen and (min-width:1200px) {
+  .modalh {
+        max-height: 95vh;
   }
 }

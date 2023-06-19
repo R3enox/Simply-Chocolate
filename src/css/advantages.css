@@ -48,8 +48,6 @@
 
 .advantages-title {
     margin-bottom: 18px;
-
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.22;
@@ -76,7 +74,7 @@
     padding: 15px 15px;
     margin-bottom: 22px;
 
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border-color-hero);
     border-radius: 365px;
 }
 
@@ -133,7 +131,7 @@
         width: 124px;
         height: 0;
 
-        border: 0.5px solid rgba(255, 255, 255, 0.5);
+        border: 0.5px solid var(--border-color-hero);
         transform: rotate(90deg);
         outline: none;
     }

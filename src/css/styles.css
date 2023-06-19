@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./fonts.ccs');
 @import url('./sections.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -17,12 +18,12 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./modal-header.css');
+@import url('./modal-buy-now.css');
 @import url('./modal-reviews.css');
 @import url('./modal-subscribe.css');
 
 
 :root {
-    --main-font-family: "Montserrat", sans-serif;
     --primary-background-color: #FAFAFA;
     --background-color-hero: #FCF1E0;
     --border-color-hero: rgba(255, 255, 255, 0.5);
@@ -41,6 +42,6 @@
 }
 
 body {
-  font-family: var(--main-font-family);
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-background-color);
 }
