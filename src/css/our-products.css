@@ -1,17 +1,13 @@
-.list {
-    list-style: none;
-}
-
 .our-products-container {
     padding-top: 36px;
     padding-bottom: 69px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .our-products-title {
     display: flex;
-    justify-content: center;
-    font-family: 'Montserrat';
-    font-style: normal;
+    justify-content: center;    
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;  
@@ -36,6 +32,7 @@
 }
 
 .swiper-slide {
+    width: auto;
     display: flex;
     flex-direction: column;
     padding: 32px 52px;
@@ -56,9 +53,7 @@
     margin: 0;   
 }
 
-.our-products-item-title {
-    font-family: 'Montserrat';
-    font-style: normal;
+.our-products-item-title {    
     font-weight: 600;
     line-height: 1.16;
     letter-spacing: -0.02em;
@@ -68,8 +63,6 @@
 }
 
 .our-products-item-text {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     margin-top: 2px;
     line-height: 1.16;
@@ -83,25 +76,23 @@
     align-items: flex-start;
     padding: 8px 19px;
     gap: 14px;
-    width: 94px;
+    min-width: 94px;
     height: 33px;
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 100px;
-    font-family: 'Montserrat';
-    font-style: normal;
+    border-radius: 100px;    
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    line-height: 17px;       
+    line-height: 1.21;       
     margin-top: 18px;
     color: var(--primary-text-color);
 }
 
 .our-products-item-price:hover,
 .our-products-item-price:focus {
-    background: #b7b3b3;    
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #b7b3b3;        
+    transition: background var(--transition-btn);
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -116,12 +107,7 @@
     justify-content: center;
     margin-top: 20px;    
 }    
-    /*
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction
-    */
+
 .swiper-pagination-bullet {
     width: 13px;
     height: 13px;    
@@ -140,7 +126,9 @@
 }
 
 @media screen and (min-width: 768px) {
-.our-products-container {
+.our-products-container {  
+    margin-left: 32px;
+    margin-right: 32px;
     padding-top: 50px;
     padding-bottom: 95px;
     }
@@ -150,6 +138,9 @@
     margin-bottom: 50px;     
     }
 
+.swiper {
+    width:auto;
+}
 .swiper-wrapper {
     gap: 18px;
     }
@@ -162,21 +153,13 @@
 .swiper-slide:hover,
 .swiper-slide:focus {    
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 4px rgba(46, 47, 66, 0.16), 0px 2px 4px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: box-shadow var(--transition-text);    
 }
 
 .swiper-pagination {
     margin-top: 32px;
 }
 }
-/*
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-.first-item {
-    margin-left: 32px;
-}
-}
-*/
 
 @media screen and (min-width: 1200px) {
 
