@@ -1397,11 +1397,26 @@
     leave a review about<br /><span class="accent-color">our chocolate</span>
   </h2>
   <form class="reviews-form" name="reviews-form">
-    <input class="reviews-form-input" type="text" placeholder="Name" />
     <input
       class="reviews-form-input"
+      name="reviews-name"
+      required
+      type="text"
+      placeholder="Name"
+      pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
+      min="1"
+      max="20"
+      title="Name must include at least one letter"
+    />
+    <input
+      class="reviews-form-input"
+      name="reviews-email"
+      required
       type="email"
       placeholder="Enter your email"
+      pattern="[a-zA-Z@.]+"
+      min="4"
+      max="50"
     />
     <div class="reviews-form-input-phone-wrapper">
       <div class="reviews-icon-ccode-wrapper">
@@ -1412,11 +1427,19 @@
       </div>
       <input
         class="reviews-form-input-phone"
+        name="reviews-tel"
+        required
         type="tel"
         placeholder="Phone number"
+        pattern="[0-9]+"
+        title="XX-XXX-XX-XX"
       />
     </div>
-    <textarea class="reviews-form-textarea" placeholder="Enter text"></textarea>
+    <textarea
+      class="reviews-form-textarea"
+      name="reviews-comment"
+      placeholder="Enter text"
+    ></textarea>
     <button class="reviews-modal-form-btn" type="submit">Send</button>
   </form>
 </div>
