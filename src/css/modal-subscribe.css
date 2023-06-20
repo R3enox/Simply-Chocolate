@@ -109,6 +109,7 @@
   .subscribe-modal-img {
     position: fixed;
     width: 538px;
+    max-height: 196px;
     top: 0;
     left: 0;
     border-radius: 15px 15px 0 0;
