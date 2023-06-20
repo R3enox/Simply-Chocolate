@@ -1,7 +1,6 @@
 :root {
   scroll-behavior: smooth;
 }
-
 ul {
   list-style: none;
   margin: 0;
@@ -13,22 +12,17 @@ h3,
 h4 {
   margin: 0;
 }
-
 /* ------------CONTAINER------------ */
-
 .container {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
-
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -39,21 +33,10 @@ h4 {
     width: 1200px;
   }
 }
-
-/* --------------FONTS------------ */
-
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-}
-
 /* ----------HERO-MOBILE-375PX------------ */
-
 .section-hero {
   padding-bottom: 71px;
 }
-
 .container-bg-hero {
   padding-top: 395px;
   padding-bottom: 20px;
@@ -64,16 +47,16 @@ h4 {
     ),
     url(../img/hero/chocolate-mobile.jpg);
   background-position: center;
+  background-color: var(--primary-color);
   background-size: cover;
   background-repeat: no-repeat;
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 30px;
 }
-
-@media (min-device-ratio: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
+@media (min-device-ratio: 2) and (max-width: 727px),
+  (min-resolution: 192dpi) and (max-width: 727px),
+  (min-resolution: 2dppx) and (max-width: 727px) {
   .container-bg-hero {
     background-image: linear-gradient(
         180deg,
@@ -83,7 +66,6 @@ h4 {
       url(../img/hero/chocolate-mobile@2x.jpg);
   }
 }
-
 .title-hero {
   text-align: start;
   max-width: 280px;
@@ -103,7 +85,6 @@ h4 {
   display: block;
   border-radius: 100px;
   padding: 12px 28px;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -115,13 +96,11 @@ h4 {
   border: none;
   transition: var(--transition-btn);
 }
-
 .btn-hero-first:hover,
 .btn-hero-first:focus {
   background-color: var(--background-color-hero);
   color: var(--accent-color);
 }
-
 .btn-hero-second {
   display: flex;
   align-items: center;
@@ -129,17 +108,14 @@ h4 {
   background-color: inherit;
   border: 1px solid var(--first-color);
   text-decoration: none;
-
   transition: var(--transition-btn);
 }
-
 .btn-hero-second:hover,
 .btn-hero-second:focus {
   color: var(--accent-color);
   background-color: var(--first-color);
   border: 1px solid var(--accent-color);
 }
-
 .link-scroll {
   text-decoration: none;
   margin-top: 32px;
@@ -152,17 +128,13 @@ h4 {
   font-size: 12px;
   line-height: 1.17;
   color: var(--first-color);
-
   letter-spacing: -0.03em;
-
   transition: var(--transition-btn);
 }
-
 .link-scroll:hover,
 .link-scroll:focus {
   color: var(--accent-color);
 }
-
 .scroll-decor {
   width: 28px;
   height: 28px;
@@ -170,140 +142,26 @@ h4 {
   align-items: center;
   justify-content: center;
   /* position: absolute; */
-
   color: var(--accent-color);
   background-color: var(--first-color);
   border-radius: 50%;
-
   transition: var(--transition-btn);
 }
-
 .link-scroll:hover .scroll-decor,
 .link-scroll:focus .scroll-decor {
   background-color: var(--accent-color);
   color: var(--first-color);
 }
-
 .svg-check {
   fill: currentColor;
   width: 16px;
   height: 16px;
 }
-
-/*-- MODAL -- */
-
-.backdrop {
-  overflow: scroll;
-
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(244, 244, 244, 0.5);
-
-  transition: var(--transition-btn);
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal {
-  overflow: scroll;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 311px;
-  background-color: var(--primary-background-color);
-  border-radius: 15px;
-
-  padding-top: 32px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 32px;
-}
-
-@media screen and (max-width: 374px) {
-  .modal {
-    max-width: 95vw;
-
-    /* width: 95%;
-    min-width: 311px;
-    height: 95%;
-    max-height: 584px; */
-  }
-}
-
-.close-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-text-color);
-  position: absolute;
-  right: 14px;
-  top: 14px;
-  width: 24px;
-  height: 24px;
-  padding: 6px;
-  border-radius: 50%;
-
-  background-color: inherit;
-  border: none;
-
-  transition: var(--transition-btn);
-}
-
-.close-icon:hover {
-  background-color: var(--background-color-hero);
-  color: var(--accent-color);
-}
-
-.close-svg {
-  width: 24px;
-  height: 24px;
-  stroke: currentColor;
-}
-
-/* .close-icon:hover .close-svg {
-  width: 16px;
-  height: 16px;
-} */
-
-.title-modal {
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.color-title {
-  color: var(--accent-color);
-}
-
-.modal-item {
-  width: 100%;
-
-  background: var(--first-color);
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
-
-  padding: 7px 15px;
-}
-
 /* ------------TABLET----------------- */
-
 @media screen and (min-width: 768px) {
   .section-hero {
     padding-bottom: 50px;
   }
-
   .container-bg-hero {
     background-image: url(../img/hero/chocolate-tb.jpg);
     padding-left: 40px;
@@ -314,42 +172,34 @@ h4 {
     padding-right: 32px;
     padding-left: 32px;
   }
-
   .container-bg-hero {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
   }
-
   .title-hero {
     max-width: 484px;
     font-size: 28px;
     line-height: 1.21;
   }
-
   /* ---------------Modal-tablet------------ */
-
   .modal {
     width: 609px;
     padding: 48px;
     overflow: auto;
   }
-
   .stuff-list {
     display: flex;
     justify-content: space-between;
   }
-
   .card-link {
     flex-direction: column;
     gap: 14px;
   }
-
   .title-modal {
     font-size: 24px;
     line-height: 1.17;
   }
-
   .modal-item {
     flex-basis: calc((100% - 32px) / 3);
     padding-left: 20px;
@@ -357,11 +207,9 @@ h4 {
     padding-top: 24px;
     padding-bottom: 18px;
   }
-
   .modal-item:not(:first-child) {
     margin-top: 0;
   }
-
   .form-text {
     font-size: 14px;
     line-height: 1.28;
@@ -370,65 +218,51 @@ h4 {
     width: 100%;
     height: auto;
   }
-
   .wraper-tablet-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .input-form-tablet {
     min-width: 246px;
     height: 66px;
   }
-
   .input-form {
     position: relative;
     height: 66px;
   }
-
   .textarea-input {
     height: 137px;
   }
-
   .btn-submit {
     min-width: 133px;
   }
-
   .input-mr {
     margin-left: 16px;
   }
-
   .input-mr,
   .input-mr-none {
     margin-top: 8px;
   }
-
   .input-form::placeholder,
   .input-form-tablet::placeholder {
     font-size: 18px;
     line-height: 1.22;
-
     letter-spacing: -0.02em;
   }
-
   .textarea-input::placeholder {
     font-size: 18px;
     line-height: 1.22;
-
     letter-spacing: -0.02em;
   }
-
   .wraper-phone {
     top: 61%;
     left: 24px;
     transform: translateY(-43%);
   }
-
   .imput-phone {
     padding-left: 155px;
   }
-
   .text-number {
     font-weight: 500;
     font-size: 18px;
@@ -436,62 +270,51 @@ h4 {
     text-align: center;
     transform: translateY(2px);
   }
-
   .text-number::after {
     right: -24px;
   }
-
   .close-icon {
     width: 28px;
     height: 28px;
     top: 24px;
     right: 24px;
   }
-
   .icons-input {
     width: 32px;
     height: 32px;
   }
-
   .icons-input-mc {
     width: 44px;
     height: 30px;
   }
-
   .btn-hero-second {
     min-width: 144px;
   }
-
   .btn-hero-second {
     min-width: 183px;
   }
-
   .price-link {
     padding: 8px 28px;
     min-width: 96px;
   }
-
   .close-svg {
     width: 28px;
     height: 28px;
   }
-
   .form-list {
     margin-top: 40px;
   }
 
   .link-scroll {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container-bg-hero {
     padding-top: 671px;
     background-image: url(../img/hero/chocolate-tb.jpg);
   }
 }
-
 @media (min-device-ratio: 2) and (min-width: 768px),
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
@@ -499,44 +322,36 @@ h4 {
     background-image: url(../img/hero/chocolate-tb@2x.jpg);
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-hero {
     padding-bottom: 72px;
   }
-
   .container-bg-hero {
     padding-top: 381px;
     padding-bottom: 40px;
     background-image: url(../img/hero/hero-bg@1x.jpg);
   }
-
   .btn-hero-first {
     min-width: 144px;
   }
-
   .btn-hero-second {
     display: flex;
     justify-content: center;
     min-width: 183px;
   }
-
   .link-scroll {
     font-size: 14px;
     line-height: 1.29;
   }
-
   .scroll-decor {
     width: 38px;
     height: 38px;
   }
-
   .svg-check {
     width: 22px;
     height: 22px;
   }
 }
-
 @media (min-device-ratio: 2) and (min-width: 1199px),
   (min-resolution: 192dpi) and (min-width: 1199px),
   (min-resolution: 2dppx) and (min-width: 1199px) {
