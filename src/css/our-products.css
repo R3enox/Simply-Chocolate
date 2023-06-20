@@ -105,7 +105,7 @@
 }
 
 .swiper-pagination {
-    bottom: auto !important;        
+    position: unset;      
     height: 13px;
     display: flex;
     justify-content: center;
@@ -152,10 +152,10 @@
     gap: 18px;
     }
     
-.swiper-slide {
+.swiper-slider-substitute {
     width: 270px !important;  
     padding: 32px 20px;
-    }
+}
 
 .swiper-slide:hover,
 .swiper-slide:focus {    
