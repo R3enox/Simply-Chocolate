@@ -99,11 +99,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .subscribe-modal {
-    width: 538px;
-    min-height: 412px;
-    padding: 236px 40px 40px 40px;
-  }
+  .subscribe-modal-title {
+      margin-top: 196px;
+  
+    }
   .subscribe-modal-picture {
     position: relative;
   }
