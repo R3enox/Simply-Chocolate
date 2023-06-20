@@ -40,7 +40,6 @@ h4 {
   }
 }
 
-
 /* ----------HERO-MOBILE-375PX------------ */
 
 .section-hero {
@@ -65,9 +64,9 @@ h4 {
   border-radius: 30px;
 }
 
-@media (min-device-ratio: 2) and (max-width: 727px),
-  (min-resolution: 192dpi) and (max-width: 727px),
-  (min-resolution: 2dppx) and (max-width: 727px) {
+@media (min-device-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
   .container-bg-hero {
     background-image: linear-gradient(
         180deg,
@@ -182,8 +181,6 @@ h4 {
   width: 16px;
   height: 16px;
 }
-
-
 
 /* ------------TABLET----------------- */
 
@@ -366,6 +363,10 @@ h4 {
 
   .form-list {
     margin-top: 40px;
+  }
+
+  .link-scroll {
+    margin-top: 0;
   }
 }
 
