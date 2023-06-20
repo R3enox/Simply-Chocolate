@@ -1,72 +1,71 @@
 <!-- <div class="backdrop is-hidden" data-modal-s> -->
 <div class="modal" data-modal="2">
-    <div class="subscribe-modal-picture">
-      <picture>
-        <source
-          srcset="
-            ./img/subscribe/subscribe-chocolate-mobile.webp            1x,
-            ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./img/subscribe/subscribe-chocolate-tablet-desktop.jpg    1x,
-            ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./img/subscribe/subscribe-chocolate-mobile.webp    1x,
-            ./img/subscribe/subscribe-chocolate-mobile@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./img/subscribe/subscribe-chocolate-mobile.jpg    1x,
-            ./img/subscribe/subscribe-chocolate-mobile@2x.jpg 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          class="subscribe-modal-img"
-          src="./img/subscribe/subscribe-chocolate-mobile.jpg"
-          alt="New chocolate"
-        />
-      </picture>
-    </div>
-    <h2 class="subscribe-modal-title">
-      Explore our<br /><span class="subscribe-modal-title-span"
-        >new chocolate</span
-      >
-      first!
-    </h2>
-    <form class="subscribe-email-form">
-      <input
-        class="subscribe-email-input"
-        type="email"
-        name="user_email"
-        placeholder="Enter your email"
-        pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-        title="example@email.com"
-        autofocus
-        required
+  <div class="subscribe-modal-picture">
+    <picture>
+      <source
+        srcset="
+          ./img/subscribe/subscribe-chocolate-mobile.webp            1x,
+          ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
       />
-      <button type="submit" class="subscribe-form-btn">Submit</button>
-    </form>
+      <source
+        srcset="
+          ./img/subscribe/subscribe-chocolate-tablet-desktop.jpg    1x,
+          ./img/subscribe/subscribe-chocolate-tablet-desktop@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/subscribe/subscribe-chocolate-mobile.webp    1x,
+          ./img/subscribe/subscribe-chocolate-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./img/subscribe/subscribe-chocolate-mobile.jpg    1x,
+          ./img/subscribe/subscribe-chocolate-mobile@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="subscribe-modal-img"
+        src="./img/subscribe/subscribe-chocolate-mobile.jpg"
+        alt="New chocolate"
+      />
+    </picture>
+  </div>
+  <h2 class="subscribe-modal-title">
+    Explore our<br /><span class="subscribe-modal-title-span"
+      >new chocolate</span
+    >
+    first!
+  </h2>
+  <form class="subscribe-email-form">
+    <input
+      class="subscribe-email-input"
+      type="email"
+      name="user_email"
+      placeholder="Enter your email"
+      pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      title="example@email.com"
+      autofocus
+      required
+    />
+    <button type="submit" class="subscribe-form-btn">Submit</button>
+  </form>
 
-    <button type="button" class="subscribe-modal-close-btn">
+  <button type="button" class="subscribe-modal-close-btn">
     <svg
       class="subscribe-modal-close-icon js-modal-close"
       width="24"
       height="24"
     >
-        <use href="./img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-  </div>
+      <use href="./img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 </div>
