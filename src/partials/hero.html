@@ -199,6 +199,7 @@
             placeholder="Name"
             id="name"
             pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
+            title="Пример: Tom"
           />
           <input
             type="text"
@@ -208,6 +209,7 @@
             placeholder="Surname"
             id="surname"
             pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
+            title="Пример: Ford"
           />
         </li>
         <li class="form-wrapper">
@@ -219,7 +221,8 @@
               class="input-form"
               required
               placeholder="Enter your email"
-              pattern="[a-zA-Z@.]+"
+              pattern="[a-zA-Z@-.]+"
+              title="Пример: email@email.com"
             />
           </label>
         </li>
@@ -235,6 +238,7 @@
               required
               placeholder="Phone number"
               pattern="[0-9]+"
+              title="Пример: +380 XX XXX XX XX"
             />
           </label>
 
@@ -257,6 +261,7 @@
               type="tel"
               id="card"
               pattern="[0-9]+"
+              title="Пример:XXXX-XXXX-XXXX-XXXX"
             />
 
             <svg width="22" height="14" class="icons-input-mc">

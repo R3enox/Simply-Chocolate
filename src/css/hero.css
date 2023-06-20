@@ -71,9 +71,9 @@ h4 {
   border-radius: 30px;
 }
 
-@media (min-device-ratio: 2) and (max-width: 727px),
-  (min-resolution: 192dpi) and (max-width: 727px),
-  (min-resolution: 2dppx) and (max-width: 727px) {
+@media (min-device-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
   .container-bg-hero {
     background-image: linear-gradient(
         180deg,
@@ -181,7 +181,7 @@ h4 {
 .link-scroll:hover .scroll-decor,
 .link-scroll:focus .scroll-decor {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--first-color);
 }
 
 .svg-check {
@@ -310,7 +310,7 @@ h4 {
 
 .price-link {
   background-color: var(--primary-background-color);
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--helper-color);
   border-radius: 100px;
   padding: 6px 16px;
   font-weight: 600;
@@ -327,7 +327,7 @@ h4 {
 .input-form {
   padding-left: 18px;
   border: none;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--helper-color);
   border-radius: 10px;
   min-width: 100%;
   height: 45px;
@@ -359,7 +359,7 @@ h4 {
 
   letter-spacing: -0.02em;
 
-  color: rgba(64, 64, 64, 0.3);
+  color: var(--input-text-color);
 }
 
 .input-form {
@@ -396,7 +396,7 @@ h4 {
   padding-left: 18px;
   margin-top: 8px;
   border: none;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--helper-color);
   border-radius: 10px;
   min-width: 100%;
 
@@ -413,7 +413,7 @@ h4 {
 
   letter-spacing: -0.02em;
 
-  color: rgba(64, 64, 64, 0.3);
+  color: var(--input-text-color);
 }
 
 .imput-phone {
@@ -438,7 +438,7 @@ h4 {
   content: '';
   width: 1px;
   height: 25px;
-  background-color: rgba(17, 17, 17, 0.1);
+  background-color: var(--helper-color);
 }
 
 .wraper-card {
@@ -655,6 +655,10 @@ h4 {
 
   .form-list {
     margin-top: 40px;
+  }
+
+  .link-scroll {
+    margin-top: 0px;
   }
 }
 
