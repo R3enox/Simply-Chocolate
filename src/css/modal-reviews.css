@@ -42,6 +42,7 @@
   transition: 0.3s all;
   width: 311px;
   min-height: 350px;
+  max-height: 95%;
 }
 
 @media screen and (max-width: 374px) {
@@ -236,10 +237,10 @@
   background: var(--background-color-hero);
 }
 
-.modalh {
+.modalh, .modalts {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -251,7 +252,7 @@
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 32px;
-  max-height: 584px;
+  height: 584px;
   overflow: auto;
 }
 
@@ -335,8 +336,3 @@
 }
 
 
-@media screen and (min-width:1200px) {
-  .modalh {
-        max-height: 95vh;
-  }
-}

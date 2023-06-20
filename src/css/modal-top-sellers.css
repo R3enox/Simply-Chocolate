@@ -1,0 +1,22 @@
+.modalts {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 311px;
+    background-color: var(--primary-background-color);
+    border-radius: 15px;
+
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+}
+
+@media screen and (max-width: 374px) {
+    .modalh {
+        max-width: 95vw;
+    }
+}
