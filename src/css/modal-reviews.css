@@ -259,11 +259,13 @@
   .modalh {
     max-width: 95vw;
   }
+
+  
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    min-width: 517px;
+    min-width: 538px;
     padding: 40px;
   }
 
