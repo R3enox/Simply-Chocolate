@@ -1,11 +1,6 @@
 .subscribe-modal-picture {
   position: relative;
 }
-
-.subscribe-modal-title {
-  margin-top: 169px;
-
-}
 .subscribe-modal-img {
   position: fixed;
   width: 311px;
@@ -21,6 +16,7 @@
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 24px;
+  margin-top: 169px;
 }
 .subscribe-modal-title-span {
   color: var(--accent-color);
@@ -100,9 +96,8 @@
 
 @media screen and (min-width: 768px) {
   .subscribe-modal-title {
-      margin-top: 196px;
-  
-    }
+    margin-top: 196px;
+  }
   .subscribe-modal-picture {
     position: relative;
   }
