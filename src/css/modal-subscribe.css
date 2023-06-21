@@ -17,6 +17,7 @@
   color: var(--primary-text-color);
   margin-bottom: 24px;
   margin-top: 169px;
+  text-align: start;
 }
 .subscribe-modal-title-span {
   color: var(--accent-color);
