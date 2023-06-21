@@ -35,9 +35,8 @@
   stroke: var(--first-color);
   width: 24px;
   height: 24px;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke var(--transition-btn), width var(--transition-btn),
+    height var(--transition-btn);
 }
 .subscribe-modal-close-btn:hover > .subscribe-modal-close-icon,
 .subscribe-modal-close-btn:focus > .subscribe-modal-close-icon {
@@ -95,9 +94,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .subscribe-modal-title {
-    margin-top: 196px;
-  }
   .subscribe-modal-picture {
     position: relative;
   }
@@ -113,6 +109,7 @@
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 28px;
+    margin-top: 196px;
   }
 
   .subscribe-modal-close-btn {
