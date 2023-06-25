@@ -4,7 +4,6 @@
   /* Скрываем подложку  */
   opacity: 1;
   visibility: hidden;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -21,19 +20,11 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-
-  /*  Установаем ширину окна  */
-  /* width: 100%; */
-
-  /* max-width: 500px; */
-
-  /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
-
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -41,21 +32,19 @@
   background-color: var(--first-color);
   transition: 0.3s all;
   width: 311px;
-  min-height: 350px;
   max-height: 95%;
+  padding: 32px 24px;
+  overflow: auto;
 }
 
 @media screen and (max-width: 374px) {
   .modal{
   max-width: 95vw;
-
+  }
+  .modalh, .modalts {
+    max-width: 95vw;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .modal {
-    padding: 32px 24px;
-  }
 
   .modal-title.mobile {
     display: block;
@@ -118,14 +107,6 @@
   .reviews-modal-form-btn {
     padding: 12px 28px;
   }
-}
-
-@media screen and (max-width: 310px) {
-  .modal {
-    width: 100%;
-  }
-}
-
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
@@ -237,39 +218,22 @@
   background: var(--background-color-hero);
 }
 
-.modalh, .modalts {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 311px;
-  background-color: var(--primary-background-color);
-  border-radius: 15px;
-
-  padding-top: 32px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 32px;
-  height: 584px;
-  overflow: auto;
-}
-
 @media screen and (max-width: 374px) {
-  .modalh {
+  .modal {
     max-width: 95vw;
   }
-
-  
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    min-width: 538px;
+    width: 538px;
     padding: 40px;
   }
 
+  .modalh  {
+    width: 609px;
+    padding: 48px;
+  }
 
   .modal-title.mobile {
     display: none;
